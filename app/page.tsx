@@ -7,9 +7,9 @@ export default function Home() {
             Ramaruizmkt
           </a>
           <div className="nav-links">
-            <a href="#servicios">Servicios</a>
-            <a href="#proceso">Proceso</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#incluye">Qué incluye</a>
+            <a href="#oferta">Oferta</a>
+            <a href="#contacto">WhatsApp</a>
           </div>
         </nav>
       </header>
@@ -23,93 +23,150 @@ export default function Home() {
               <span>ruiz</span>
               mkt
             </p>
-            <h1>Marketing digital que hace crecer tu marca.</h1>
+            <h1>Publicidad lista. Vos solo cobrás.</h1>
             <p>
-              Estrategia, contenido y adquisición pensados para negocios que
-              necesitan claridad y resultados medibles.
+              Oferta simple para arrancar: yo me encargo de todo lo referido a
+              tu publicidad. Vos recibís soporte por WhatsApp y te enfocás en
+              vender.
             </p>
             <div className="hero-cta">
-              <a className="btn btn-primary" href="#contacto">
-                Hablar de tu proyecto
+              <a
+                className="btn btn-primary"
+                href="https://wa.me/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Quiero la oferta
               </a>
-              <a className="btn btn-ghost" href="#servicios">
-                Ver servicios
+              <a className="btn btn-ghost" href="#incluye">
+                Ver qué incluye
               </a>
             </div>
           </div>
         </section>
 
-        <section className="section" id="servicios">
+        <section className="section" id="incluye">
           <div className="wrap">
-            <p className="section-label">Servicios</p>
-            <h2>Lo que puedo hacer por vos</h2>
+            <p className="section-label">Qué incluye</p>
+            <h2>Todo hecho por mí. Cero vueltas.</h2>
             <p className="section-lead">
-              Un enfoque práctico: menos ruido, más sistema. Cada servicio se
-              adapta a tu etapa y a tu capacidad de ejecución.
+              Pensado para farmear resultados sin que tengas que aprender ads
+              ni estar encima de Meta todos los días.
             </p>
-            <div className="services">
-              <article className="service">
-                <h3>Estrategia digital</h3>
+            <ul className="perk-list">
+              <li>
+                <h3>Yo me encargo de tu publicidad</h3>
                 <p>
-                  Definimos posicionamiento, canales y prioridades para que cada
-                  acción tenga un objetivo claro.
+                  Armado, publicación y seguimiento de campañas. No tenés que
+                  tocar el administrador de anuncios.
                 </p>
-              </article>
-              <article className="service">
-                <h3>Contenido y redes</h3>
+              </li>
+              <li>
+                <h3>Soporte por WhatsApp</h3>
                 <p>
-                  Calendario editorial, piezas y narrativa de marca para
-                  construir presencia consistente y memorable.
+                  Consultas, avances y ajustes por WhatsApp. Respuesta directa,
+                  sin tickets ni formularios eternos.
                 </p>
-              </article>
-              <article className="service">
-                <h3>Ads y adquisición</h3>
+              </li>
+              <li>
+                <h3>Mensaje y creatividades</h3>
                 <p>
-                  Campañas en Meta y Google orientadas a leads o ventas, con
-                  seguimiento y optimización continua.
+                  Definimos qué decir y con qué piezas salir para que el anuncio
+                  hable claro a tu audiencia.
                 </p>
-              </article>
-              <article className="service">
-                <h3>Crecimiento continuo</h3>
+              </li>
+              <li>
+                <h3>Optimización semanal</h3>
                 <p>
-                  Análisis, pruebas y mejoras mensuales para sostener el
-                  crecimiento sin perder foco.
+                  Recorto lo que no rinde y refuerzo lo que convierte. El
+                  presupuesto trabaja, no se tira.
                 </p>
-              </article>
-            </div>
+              </li>
+              <li>
+                <h3>Reporte simple</h3>
+                <p>
+                  Números claros: cuánto se gastó, qué entró y qué conviene
+                  hacer la próxima semana.
+                </p>
+              </li>
+              <li>
+                <h3>Arranque rápido</h3>
+                <p>
+                  En pocos días estás en el aire. Ideal si querés empezar a
+                  mover plata sin montar un equipo de marketing.
+                </p>
+              </li>
+            </ul>
           </div>
         </section>
 
         <section className="section" id="proceso">
           <div className="wrap">
-            <p className="section-label">Proceso</p>
-            <h2>Cómo trabajamos</h2>
+            <p className="section-label">Cómo funciona</p>
+            <h2>Tres pasos y listo</h2>
             <p className="section-lead">
-              Un proceso corto y transparente, diseñado para arrancar rápido y
-              medir desde el día uno.
+              Sin contratos eternos ni procesos hinchados. Entrás, alineamos y
+              salimos a vender.
             </p>
             <div className="process">
               <article className="step">
-                <h3>Diagnóstico</h3>
+                <h3>Me contás tu oferta</h3>
                 <p>
-                  Revisamos tu marca, audiencia y canales actuales para
-                  encontrar oportunidades reales.
+                  Qué vendés, a quién y con qué presupuesto querés arrancar.
+                  Lo alineamos por WhatsApp.
                 </p>
               </article>
               <article className="step">
-                <h3>Plan de acción</h3>
+                <h3>Yo armo y lanzo</h3>
                 <p>
-                  Armamos un plan concreto: mensajes, formatos, presupuesto y
-                  métricas de éxito.
+                  Configuro cuentas, campañas y creatividades. Vos solo
+                  aprobás y listo.
                 </p>
               </article>
               <article className="step">
-                <h3>Ejecución y ajuste</h3>
+                <h3>Medimos y ajustamos</h3>
                 <p>
-                  Publicamos, medimos y iteramos. Lo que no convierte, se
-                  mejora o se corta.
+                  Semana a semana optimizo para que cada peso invertido
+                  busque retorno.
                 </p>
               </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="oferta">
+          <div className="wrap offer-block">
+            <p className="section-label">Oferta de entrada</p>
+            <h2>Barato para arrancar y farmear.</h2>
+            <p className="section-lead">
+              Precio bajo a propósito: para que puedas probar el sistema sin
+              quemar el mes. Si funciona, escalamos juntos.
+            </p>
+            <div className="price-row">
+              <p className="price">
+                <span className="price-amount">USD 49</span>
+                <span className="price-period">/ mes</span>
+              </p>
+              <p className="price-note">
+                Gestión completa de publicidad + soporte por WhatsApp. El
+                presupuesto de ads se paga aparte a Meta/Google.
+              </p>
+            </div>
+            <ul className="offer-bullets">
+              <li>Todo referido a tu publicidad, a cargo mío</li>
+              <li>Soporte directo por WhatsApp</li>
+              <li>Optimización y reporte semanal</li>
+              <li>Sin permanencia: mes a mes</li>
+            </ul>
+            <div className="hero-cta">
+              <a
+                className="btn btn-primary"
+                href="https://wa.me/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Reservar por WhatsApp
+              </a>
             </div>
           </div>
         </section>
@@ -117,25 +174,22 @@ export default function Home() {
         <section className="section contact" id="contacto">
           <div className="wrap">
             <p className="section-label">Contacto</p>
-            <h2>Contame qué querés lograr</h2>
+            <h2>Escribime y arrancamos</h2>
             <p className="section-lead">
-              Escribime y vemos juntos el siguiente paso. Ideal si ya tenés un
-              negocio activo y querés ordenar o escalar tu marketing.
+              Mandame un WhatsApp con qué vendés y cuánto querés invertir en
+              ads. Te digo si la oferta te sirve y cómo arrancar esta semana.
             </p>
             <div className="contact-actions">
               <a
                 className="btn btn-primary"
-                href="mailto:hola@ramaruizmkt.com"
-              >
-                hola@ramaruizmkt.com
-              </a>
-              <a
-                className="btn btn-ghost"
                 href="https://wa.me/"
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp
+                Hablar por WhatsApp
+              </a>
+              <a className="btn btn-ghost" href="mailto:hola@ramaruizmkt.com">
+                hola@ramaruizmkt.com
               </a>
             </div>
           </div>
@@ -144,7 +198,7 @@ export default function Home() {
 
       <footer className="wrap footer">
         <span>© {new Date().getFullYear()} Ramaruizmkt</span>
-        <span>Marketing digital con foco en resultados</span>
+        <span>Publicidad hecha por mí, resultados para vos</span>
       </footer>
     </div>
   );

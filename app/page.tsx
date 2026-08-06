@@ -7,9 +7,9 @@ export default function Home() {
             Ramaruizmkt
           </a>
           <div className="nav-links">
-            <a href="#servicios">Servicios</a>
-            <a href="#proceso">Proceso</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#incluye">Qué incluye</a>
+            <a href="#oferta">Setup</a>
+            <a href="#contacto">WhatsApp</a>
           </div>
         </nav>
       </header>
@@ -23,93 +23,152 @@ export default function Home() {
               <span>ruiz</span>
               mkt
             </p>
-            <h1>Marketing digital que hace crecer tu marca.</h1>
+            <h1>Setup de anuncios para tu tienda. Yo me encargo de todo.</h1>
             <p>
-              Estrategia, contenido y adquisición pensados para negocios que
-              necesitan claridad y resultados medibles.
+              Armo tus primeras campañas, creatividades y estructura en Meta.
+              Vos recibís soporte por WhatsApp y un sistema listo para vender —
+              sin fee mensual.
             </p>
             <div className="hero-cta">
-              <a className="btn btn-primary" href="#contacto">
-                Hablar de tu proyecto
+              <a
+                className="btn btn-primary"
+                href="https://wa.me/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Quiero el Setup
               </a>
-              <a className="btn btn-ghost" href="#servicios">
-                Ver servicios
+              <a className="btn btn-ghost" href="#oferta">
+                Ver precio
               </a>
             </div>
           </div>
         </section>
 
-        <section className="section" id="servicios">
+        <section className="section" id="incluye">
           <div className="wrap">
-            <p className="section-label">Servicios</p>
-            <h2>Lo que puedo hacer por vos</h2>
+            <p className="section-label">Qué incluye</p>
+            <h2>Todo referido a tu publicidad, a cargo mío.</h2>
             <p className="section-lead">
-              Un enfoque práctico: menos ruido, más sistema. Cada servicio se
-              adapta a tu etapa y a tu capacidad de ejecución.
+              Un Setup completo para que tu tienda empiece a generar consultas
+              sin que tengas que pelearte con el administrador de anuncios.
             </p>
-            <div className="services">
-              <article className="service">
-                <h3>Estrategia digital</h3>
+            <ul className="perk-list">
+              <li>
+                <h3>Primeras campañas armadas</h3>
                 <p>
-                  Definimos posicionamiento, canales y prioridades para que cada
-                  acción tenga un objetivo claro.
+                  Configuro Business Manager, estructura y las primeras
+                  campañas listas para salir a vender.
                 </p>
-              </article>
-              <article className="service">
-                <h3>Contenido y redes</h3>
+              </li>
+              <li>
+                <h3>Primeras creatividades</h3>
                 <p>
-                  Calendario editorial, piezas y narrativa de marca para
-                  construir presencia consistente y memorable.
+                  Piezas y mensajes pensados para tu producto y tu audiencia,
+                  no plantillas genéricas.
                 </p>
-              </article>
-              <article className="service">
-                <h3>Ads y adquisición</h3>
+              </li>
+              <li>
+                <h3>Presupuesto optimizado</h3>
                 <p>
-                  Campañas en Meta y Google orientadas a leads o ventas, con
-                  seguimiento y optimización continua.
+                  Te digo cuánto invertir para arrancar sin quemar plata ni
+                  quedarte corto de datos.
                 </p>
-              </article>
-              <article className="service">
-                <h3>Crecimiento continuo</h3>
+              </li>
+              <li>
+                <h3>Soporte por WhatsApp</h3>
                 <p>
-                  Análisis, pruebas y mejoras mensuales para sostener el
-                  crecimiento sin perder foco.
+                  15 días de acompañamiento directo por WhatsApp para dudas,
+                  ajustes y seguimiento del arranque.
                 </p>
-              </article>
-            </div>
+              </li>
+              <li>
+                <h3>Guía para sostenerlo</h3>
+                <p>
+                  Manual simple para que puedas mantener las campañas vos, o
+                  seguir trabajando juntos si preferís delegar.
+                </p>
+              </li>
+              <li>
+                <h3>Listo en 15 días</h3>
+                <p>
+                  En dos semanas tenés el sistema funcionando. Sin procesos
+                  eternos ni agencias hinchadas.
+                </p>
+              </li>
+            </ul>
           </div>
         </section>
 
         <section className="section" id="proceso">
           <div className="wrap">
-            <p className="section-label">Proceso</p>
-            <h2>Cómo trabajamos</h2>
+            <p className="section-label">Cómo funciona</p>
+            <h2>Tres pasos y salís al aire</h2>
             <p className="section-lead">
-              Un proceso corto y transparente, diseñado para arrancar rápido y
-              medir desde el día uno.
+              Pago único. Yo ejecuto. Vos vendés.
             </p>
             <div className="process">
               <article className="step">
-                <h3>Diagnóstico</h3>
+                <h3>Brief por WhatsApp</h3>
                 <p>
-                  Revisamos tu marca, audiencia y canales actuales para
-                  encontrar oportunidades reales.
+                  Me contás qué vendés, a quién y con qué presupuesto querés
+                  arrancar. Alineamos en minutos.
                 </p>
               </article>
               <article className="step">
-                <h3>Plan de acción</h3>
+                <h3>Armo y lanzo</h3>
                 <p>
-                  Armamos un plan concreto: mensajes, formatos, presupuesto y
-                  métricas de éxito.
+                  Campañas, creatividades y estructura técnica. Vos solo
+                  aprobás y listo.
                 </p>
               </article>
               <article className="step">
-                <h3>Ejecución y ajuste</h3>
+                <h3>Acompañamiento</h3>
                 <p>
-                  Publicamos, medimos y iteramos. Lo que no convierte, se
-                  mejora o se corta.
+                  15 días de soporte para ajustar, responder dudas y dejar el
+                  sistema estable.
                 </p>
               </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="oferta">
+          <div className="wrap offer-block">
+            <p className="section-label">Setup · Pago único</p>
+            <h2>Entrada accesible. Sin retainer.</h2>
+            <p className="section-lead">
+              Otros Setup similares rondan los USD 350–450. Acá arrancás más
+              bajo, con todo hecho y soporte incluido. Ideal para tiendas que
+              quieren probar el sistema sin engancharse a un fee mensual.
+            </p>
+            <div className="price-row">
+              <p className="price">
+                <span className="price-anchor">USD 280</span>
+                <span className="price-amount">USD 197</span>
+                <span className="price-period">pago único</span>
+              </p>
+              <p className="price-note">
+                Setup completo de publicidad + 15 días de soporte por WhatsApp.
+                El presupuesto de ads se paga aparte a Meta.
+              </p>
+            </div>
+            <ul className="offer-bullets">
+              <li>Yo me encargo de todo lo referido a tu publicidad</li>
+              <li>Campañas + creatividades + presupuesto optimizado</li>
+              <li>Soporte directo por WhatsApp (15 días)</li>
+              <li>Guía para mantenerlo vos después</li>
+              <li>Sin fee mensual · sin permanencia</li>
+            </ul>
+            <div className="hero-cta">
+              <a
+                className="btn btn-primary"
+                href="https://wa.me/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Reservar Setup por WhatsApp
+              </a>
             </div>
           </div>
         </section>
@@ -117,25 +176,22 @@ export default function Home() {
         <section className="section contact" id="contacto">
           <div className="wrap">
             <p className="section-label">Contacto</p>
-            <h2>Contame qué querés lograr</h2>
+            <h2>Escribime y vemos tu tienda</h2>
             <p className="section-lead">
-              Escribime y vemos juntos el siguiente paso. Ideal si ya tenés un
-              negocio activo y querés ordenar o escalar tu marketing.
+              Mandame un WhatsApp con qué vendés y cuánto podés invertir en
+              ads. Te confirmo si el Setup te sirve y cómo arrancar.
             </p>
             <div className="contact-actions">
               <a
                 className="btn btn-primary"
-                href="mailto:hola@ramaruizmkt.com"
-              >
-                hola@ramaruizmkt.com
-              </a>
-              <a
-                className="btn btn-ghost"
                 href="https://wa.me/"
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp
+                Hablar por WhatsApp
+              </a>
+              <a className="btn btn-ghost" href="mailto:hola@ramaruizmkt.com">
+                hola@ramaruizmkt.com
               </a>
             </div>
           </div>
@@ -144,7 +200,7 @@ export default function Home() {
 
       <footer className="wrap footer">
         <span>© {new Date().getFullYear()} Ramaruizmkt</span>
-        <span>Marketing digital con foco en resultados</span>
+        <span>Setup de ads para tiendas · pago único</span>
       </footer>
     </div>
   );

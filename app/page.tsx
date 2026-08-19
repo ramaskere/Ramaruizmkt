@@ -127,29 +127,32 @@ export default function Home() {
             <p className="section-label">Cómo funciona</p>
             <h2>Tres pasos y arrancamos</h2>
             <p className="section-lead">Vos aprobás. Yo ejecuto y reporto.</p>
-            <div className="process stagger">
-              <article className="step reveal">
-                <h3>Diagnóstico</h3>
+            <ul className="timeline timeline--wide stagger">
+              <li className="timeline-item reveal">
+                <span className="timeline-dot" aria-hidden="true" />
+                <h4>Diagnóstico</h4>
                 <p>
                   Miro tu funnel y tu cuenta actual. Definimos juntos qué
                   tipo de tráfico necesitás ahora.
                 </p>
-              </article>
-              <article className="step reveal">
-                <h3>Armo y gestiono</h3>
+              </li>
+              <li className="timeline-item reveal">
+                <span className="timeline-dot" aria-hidden="true" />
+                <h4>Armo y gestiono</h4>
                 <p>
                   Estructuro las campañas y me hago cargo de la optimización
                   día a día.
                 </p>
-              </article>
-              <article className="step reveal">
-                <h3>Reporto y ajusto</h3>
+              </li>
+              <li className="timeline-item reveal">
+                <span className="timeline-dot" aria-hidden="true" />
+                <h4>Reporto y ajusto</h4>
                 <p>
                   Reporte semanal + llamada mensual para ir afinando sin
                   sorpresas.
                 </p>
-              </article>
-            </div>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -166,6 +169,12 @@ export default function Home() {
             <ul className="results-grid stagger">
               <li className="card result-card reveal">
                 <span className="card-tag">Producto A</span>
+                <p className="result-headline">
+                  Invirtió <span className="result-metric">$1.034</span> y
+                  generó <span className="result-metric">$5.263</span> en
+                  ventas
+                </p>
+                <p className="result-sub">5.09x de retorno</p>
                 <div className="result-image">
                   <Image
                     src="/resultados/ecommerce-producto-a.jpeg"
@@ -177,6 +186,12 @@ export default function Home() {
               </li>
               <li className="card result-card reveal">
                 <span className="card-tag">Producto B</span>
+                <p className="result-headline">
+                  Invirtió <span className="result-metric">$1.615</span> y
+                  generó <span className="result-metric">$6.152</span> en
+                  ventas
+                </p>
+                <p className="result-sub">3.81x de retorno</p>
                 <div className="result-image">
                   <Image
                     src="/resultados/ecommerce-producto-b.jpeg"
@@ -192,6 +207,12 @@ export default function Home() {
             <ul className="results-grid stagger">
               <li className="card result-card result-card--compact reveal">
                 <span className="card-tag">Campaña de conversaciones</span>
+                <p className="result-headline">
+                  Trayendo clientes a{" "}
+                  <span className="result-metric">$0,20</span> por
+                  conversación
+                </p>
+                <p className="result-sub">668 conversaciones generadas</p>
                 <div className="result-image">
                   <Image
                     src="/resultados/tienda-apple-conversaciones.jpeg"
@@ -245,6 +266,16 @@ export default function Home() {
           <div className="wrap">
             <p className="section-label">Sobre mí</p>
             <h2>No planeé ser media buyer. Pasó, y no volví atrás.</h2>
+            <div className="bio-highlights reveal">
+              <span className="bio-stat">
+                <strong>+$700K</strong> gestionados en Meta Ads
+              </span>
+              <span className="bio-tag-group">
+                <span className="bio-tag">Lanzamientos</span>
+                <span className="bio-tag">Evergreen</span>
+                <span className="bio-tag">Ecommerce</span>
+              </span>
+            </div>
             <div className="bio-layout">
               <div className="reveal">
                 <p className="bio-text">
@@ -256,7 +287,8 @@ export default function Home() {
                 <p className="bio-text">
                   Me puse la camiseta, aprendí a las corridas, y terminé
                   metiendo las manos en cuentas grandes de infoproductores
-                  top de Argentina y Latam. Ahí encontré lo mío: no en la
+                  top de Argentina y Latam — gestionando lanzamientos,
+                  evergreen y ecommerce. Ahí encontré lo mío: no en la
                   edición, en hacer que la pauta realmente venda.
                 </p>
                 <p className="bio-signature">

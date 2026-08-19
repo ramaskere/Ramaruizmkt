@@ -309,6 +309,55 @@ a {
   font-size: 0.95rem;
 }
 
+.results-grid {
+  list-style: none;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.result-card {
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.stat-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.stat-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-value--accent {
+  color: var(--accent);
+}
+
 .process {
   display: grid;
   gap: 2rem;
@@ -344,37 +393,6 @@ a {
 
 .step p {
   color: var(--muted);
-}
-
-.offer-block .price-row {
-  margin-bottom: 1.75rem;
-}
-
-.price {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.6rem;
-  margin-bottom: 0.85rem;
-}
-
-.price-amount {
-  font-size: clamp(2.6rem, 7vw, 3.8rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  color: var(--ink);
-}
-
-.price-period {
-  color: var(--muted);
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.price-note {
-  color: var(--muted);
-  max-width: 34rem;
 }
 
 .offer-bullets {

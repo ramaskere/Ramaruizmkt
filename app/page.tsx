@@ -15,7 +15,8 @@ export default function Home() {
           <div className="nav-links">
             <a href="#incluye">Qué incluye</a>
             <a href="#proceso">Proceso</a>
-            <a href="#oferta">Fee y cupo</a>
+            <a href="#resultados">Resultados</a>
+            <a href="#oferta">Cupo</a>
             <a
               className="nav-cta"
               href={`${WHATSAPP_BASE}?text=${WHATSAPP_MSG}`}
@@ -57,7 +58,7 @@ export default function Home() {
                 Quiero mi cupo →
               </a>
               <a className="btn btn-ghost" href="#oferta">
-                Ver fee y cupo ↓
+                Ver cupo ↓
               </a>
             </div>
           </div>
@@ -163,25 +164,88 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section" id="resultados">
+          <div className="wrap">
+            <p className="section-label">Resultados reales</p>
+            <h2>Los números, tal cual salen del Ads Manager.</h2>
+            <p className="section-lead">
+              Nada de mockups ni cifras infladas — capturas reales de cuentas
+              que gestiono. Este cliente de ecommerce, en dos productos
+              distintos:
+            </p>
+            <ul className="results-grid">
+              <li className="card result-card">
+                <span className="card-tag">Producto A · Ecommerce</span>
+                <div className="stat-row">
+                  <div className="stat-item">
+                    <span className="stat-label">Gasto</span>
+                    <span className="stat-value">$1.034</span>
+                  </div>
+                  <div className="stat-item">
+                    <span className="stat-label">Facturación</span>
+                    <span className="stat-value">$5.263</span>
+                  </div>
+                  <div className="stat-item">
+                    <span className="stat-label">ROAS</span>
+                    <span className="stat-value stat-value--accent">
+                      5.09x
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li className="card result-card">
+                <span className="card-tag">Producto B · Ecommerce</span>
+                <div className="stat-row">
+                  <div className="stat-item">
+                    <span className="stat-label">Gasto</span>
+                    <span className="stat-value">$1.615</span>
+                  </div>
+                  <div className="stat-item">
+                    <span className="stat-label">Facturación</span>
+                    <span className="stat-value">$6.152</span>
+                  </div>
+                  <div className="stat-item">
+                    <span className="stat-label">ROAS</span>
+                    <span className="stat-value stat-value--accent">
+                      3.81x
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li className="card result-card">
+                <span className="card-tag">Campaña de conversaciones</span>
+                <div className="stat-row">
+                  <div className="stat-item">
+                    <span className="stat-label">Gasto</span>
+                    <span className="stat-value">$134,85</span>
+                  </div>
+                  <div className="stat-item">
+                    <span className="stat-label">Conversaciones</span>
+                    <span className="stat-value">668</span>
+                  </div>
+                  <div className="stat-item">
+                    <span className="stat-label">Costo por conversación</span>
+                    <span className="stat-value stat-value--accent">
+                      $0,20
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <section className="section" id="oferta">
           <div className="wrap offer-block">
-            <p className="section-label">Fee mensual · Cupo limitado</p>
-            <h2>Gestión completa, fee fijo.</h2>
+            <p className="section-label">Cupo limitado</p>
+            <h2>Fee fijo, ajustado a tu cuenta.</h2>
             <p className="section-lead">
               Trabajo con un máximo de 2-3 clientes en simultáneo — no es
               marketing, es lo que me permite dar atención de verdad en vez
-              de manejar 15 cuentas a la vez.
+              de manejar 15 cuentas a la vez. El fee se ajusta según el
+              tamaño de tu cuenta e inversión en pauta — te lo cuento por
+              WhatsApp.
             </p>
-            <div className="price-row">
-              <p className="price">
-                <span className="price-amount">USD 600–1.200</span>
-                <span className="price-period">/ mes</span>
-              </p>
-              <p className="price-note">
-                Fee fijo según tamaño de cuenta e inversión en pauta. El
-                presupuesto de ads se paga aparte a Meta.
-              </p>
-            </div>
             <ul className="offer-bullets">
               <li>Diagnóstico de funnel incluido al arrancar</li>
               <li>Gestión de evergreen, lanzamiento, leads o una mezcla</li>

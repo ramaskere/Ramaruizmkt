@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "./reveal";
 
 const WHATSAPP_NUMBER = "5492645127846";
 const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}`;
@@ -9,6 +10,7 @@ const WHATSAPP_MSG = encodeURIComponent(
 export default function Home() {
   return (
     <div className="page">
+      <Reveal />
       <header className="wrap">
         <nav className="nav" aria-label="Principal">
           <a className="nav-brand" href="#top">
@@ -75,81 +77,46 @@ export default function Home() {
               programas. Yo me hago cargo de que la pauta funcione, de punta
               a punta.
             </p>
-            <ul className="card-grid">
-              <li className="card">
-                <span className="card-num">01</span>
+            <ul className="card-grid stagger">
+              <li className="card reveal" data-n="01">
                 <span className="card-tag">Diagnóstico</span>
                 <h3>Reviso tu funnel primero</h3>
-                <p>
-                  Oferta, landing y pauta actual, antes de tocar nada. Para
-                  saber qué tipo de tráfico necesitás de verdad: evergreen,
-                  lanzamiento, leads o una mezcla.
-                </p>
+                <p>Oferta, landing y pauta actual, antes de tocar nada.</p>
               </li>
-              <li className="card">
-                <span className="card-num">02</span>
+              <li className="card reveal" data-n="02">
                 <span className="card-tag">Investigación</span>
-                <h3>Estudio tu nicho y tu competencia</h3>
-                <p>
-                  Qué está haciendo la competencia, qué anuncios corre y qué
-                  le funciona, antes de armar la estrategia.
-                </p>
+                <h3>Estudio tu nicho y competencia</h3>
+                <p>Qué corre la competencia y qué le funciona.</p>
               </li>
-              <li className="card">
-                <span className="card-num">03</span>
+              <li className="card reveal" data-n="03">
                 <span className="card-tag">Gestión</span>
                 <h3>Pauta completa, de punta a punta</h3>
-                <p>
-                  Armo y optimizo las campañas según lo que salga del
-                  diagnóstico. Vos no tocás el Ads Manager.
-                </p>
+                <p>Armo y optimizo todo. Vos no tocás el Ads Manager.</p>
               </li>
-              <li className="card">
-                <span className="card-num">04</span>
+              <li className="card reveal" data-n="04">
                 <span className="card-tag">Creativos</span>
                 <h3>Edito los anuncios, video e imagen</h3>
-                <p>
-                  Las piezas para tus campañas quedan listas por mí. Esto no
-                  es producción de contenido orgánico ni copywriting completo
-                  de tu negocio — eso sigue siendo tuyo.
-                </p>
+                <p>Las piezas quedan listas por mí, no solo la pauta.</p>
               </li>
-              <li className="card">
-                <span className="card-num">05</span>
+              <li className="card reveal" data-n="05">
                 <span className="card-tag">Funnel</span>
                 <h3>Miro más allá de los anuncios</h3>
-                <p>
-                  Si algo no vende, no te tiro la pelota. Reviso oferta,
-                  landing y copy, y te aviso apenas lo veo.
-                </p>
+                <p>Si algo no vende, reviso oferta y landing también.</p>
               </li>
-              <li className="card">
-                <span className="card-num">06</span>
+              <li className="card reveal" data-n="06">
                 <span className="card-tag">Reporte</span>
                 <h3>Reportes diarios + dashboard en vivo</h3>
-                <p>
-                  Reporte corto todos los días, resumen semanal, y un
-                  dashboard que podés mirar cuando quieras. Nada de esperar a
-                  fin de mes para saber cómo va.
-                </p>
+                <p>Diario, semanal, y un dashboard que mirás cuando querés.</p>
               </li>
-              <li className="card">
-                <span className="card-num">07</span>
+              <li className="card reveal" data-n="07">
                 <span className="card-tag">Revisión</span>
                 <h3>Llamada mensual</h3>
-                <p>
-                  Nos sentamos una vez al mes a ver el panorama completo y
-                  decidir los próximos pasos.
-                </p>
+                <p>Una vez al mes, vemos el panorama completo.</p>
               </li>
-              <li className="card">
-                <span className="card-num">08</span>
+              <li className="card reveal" data-n="08">
                 <span className="card-tag">Fee</span>
                 <h3>Fee fijo, no % de inversión</h3>
-                <p>
-                  Pagás lo mismo factures lo que factures en ads. No tengo
-                  incentivo para que gastes de más.
-                </p>
+                <p>Pagás lo mismo factures lo que factures.</p>
               </li>
             </ul>
           </div>
@@ -160,22 +127,22 @@ export default function Home() {
             <p className="section-label">Cómo funciona</p>
             <h2>Tres pasos y arrancamos</h2>
             <p className="section-lead">Vos aprobás. Yo ejecuto y reporto.</p>
-            <div className="process">
-              <article className="step">
+            <div className="process stagger">
+              <article className="step reveal">
                 <h3>Diagnóstico</h3>
                 <p>
                   Miro tu funnel y tu cuenta actual. Definimos juntos qué
                   tipo de tráfico necesitás ahora.
                 </p>
               </article>
-              <article className="step">
+              <article className="step reveal">
                 <h3>Armo y gestiono</h3>
                 <p>
                   Estructuro las campañas y me hago cargo de la optimización
                   día a día.
                 </p>
               </article>
-              <article className="step">
+              <article className="step reveal">
                 <h3>Reporto y ajusto</h3>
                 <p>
                   Reporte semanal + llamada mensual para ir afinando sin
@@ -196,8 +163,8 @@ export default function Home() {
             </p>
 
             <p className="results-niche">Ecommerce</p>
-            <ul className="results-grid">
-              <li className="card result-card">
+            <ul className="results-grid stagger">
+              <li className="card result-card reveal">
                 <span className="card-tag">Producto A</span>
                 <div className="result-image">
                   <Image
@@ -208,7 +175,7 @@ export default function Home() {
                   />
                 </div>
               </li>
-              <li className="card result-card">
+              <li className="card result-card reveal">
                 <span className="card-tag">Producto B</span>
                 <div className="result-image">
                   <Image
@@ -222,8 +189,8 @@ export default function Home() {
             </ul>
 
             <p className="results-niche">Tienda Apple</p>
-            <ul className="results-grid">
-              <li className="card result-card result-card--compact">
+            <ul className="results-grid stagger">
+              <li className="card result-card result-card--compact reveal">
                 <span className="card-tag">Campaña de conversaciones</span>
                 <div className="result-image">
                   <Image
@@ -278,30 +245,55 @@ export default function Home() {
           <div className="wrap">
             <p className="section-label">Sobre mí</p>
             <h2>No planeé ser media buyer. Pasó, y no volví atrás.</h2>
-            <p className="bio-text">
-              Arranqué como editor de video, sin pensar en meterme en pauta.
-              Pero en la agencia donde trabajaba, el que llevaba los anuncios
-              se fue de un día para el otro — y alguien tenía que hacerse
-              cargo. Me puse la camiseta, aprendí a las corridas, y terminé
-              metiendo las manos en cuentas grandes de infoproductores top de
-              Argentina y Latam.
-            </p>
-            <p className="bio-text">
-              Ahí encontré lo mío: no en la edición, en hacer que la pauta
-              realmente venda. Hoy me dedico full time a esto — y esa mirada
-              de editor no se me fue, la uso para pensar las creatividades,
-              no solo la segmentación.
-            </p>
-            <p className="bio-signature">Rama Ruiz — gestión de Meta Ads.</p>
-            <div className="contact-actions">
-              <a
-                className="btn btn-primary"
-                href={`${WHATSAPP_BASE}?text=${WHATSAPP_MSG}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Hablar por WhatsApp
-              </a>
+            <div className="bio-layout">
+              <div className="reveal">
+                <p className="bio-text">
+                  Arranqué como editor de video, sin pensar en meterme en
+                  pauta. Pero en la agencia donde trabajaba, el que llevaba
+                  los anuncios se fue de un día para el otro — y alguien
+                  tenía que hacerse cargo.
+                </p>
+                <p className="bio-text">
+                  Me puse la camiseta, aprendí a las corridas, y terminé
+                  metiendo las manos en cuentas grandes de infoproductores
+                  top de Argentina y Latam. Ahí encontré lo mío: no en la
+                  edición, en hacer que la pauta realmente venda.
+                </p>
+                <p className="bio-signature">
+                  Rama Ruiz — gestión de Meta Ads.
+                </p>
+                <div className="contact-actions">
+                  <a
+                    className="btn btn-primary"
+                    href={`${WHATSAPP_BASE}?text=${WHATSAPP_MSG}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Hablar por WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <ul className="timeline stagger">
+                <li className="timeline-item reveal">
+                  <span className="timeline-dot" aria-hidden="true" />
+                  <h4>Editor de video</h4>
+                  <p>Así arranqué, editando piezas para otros.</p>
+                </li>
+                <li className="timeline-item reveal">
+                  <span className="timeline-dot" aria-hidden="true" />
+                  <h4>Se hizo cargo de los anuncios</h4>
+                  <p>En la agencia, cuando nadie más podía, me tocó a mí.</p>
+                </li>
+                <li className="timeline-item reveal">
+                  <span className="timeline-dot" aria-hidden="true" />
+                  <h4>Full time en Meta Ads</h4>
+                  <p>
+                    Hoy gestiono cuentas grandes de infoproductores top de
+                    Argentina y Latam.
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </section>

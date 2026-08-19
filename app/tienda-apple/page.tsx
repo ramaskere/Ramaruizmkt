@@ -1,13 +1,18 @@
-import Image from "next/image";
-import Reveal from "./reveal";
-import Carousel from "./carousel";
-import { whatsappLink } from "./lib/whatsapp";
+import type { Metadata } from "next";
+import Reveal from "../reveal";
+import { whatsappLink } from "../lib/whatsapp";
+
+export const metadata: Metadata = {
+  title: "Ramaruizmkt — Meta Ads para tiendas Apple",
+  description:
+    "Gestión de Meta Ads para tiendas Apple. Fee fijo mensual, cupo limitado a 2-3 clientes. Yo me encargo de todo.",
+};
 
 const WHATSAPP_HREF = whatsappLink(
-  "Hola! Vi tu página y quiero saber más sobre la gestión de Meta Ads."
+  "Hola! Vi tu página y quiero saber más sobre la gestión de Meta Ads para mi tienda."
 );
 
-export default function Home() {
+export default function TiendaApple() {
   return (
     <div className="page">
       <Reveal />
@@ -19,7 +24,6 @@ export default function Home() {
           <div className="nav-links">
             <a href="#incluye">Qué incluye</a>
             <a href="#proceso">Proceso</a>
-            <a href="#resultados">Resultados</a>
             <a href="#oferta">Cupo</a>
             <a
               className="nav-cta"
@@ -41,13 +45,10 @@ export default function Home() {
             <span />
           </div>
           <div className="hero-content">
-            <p className="eyebrow">
-              Meta Ads · Coaches, negocios e infoproductores
-            </p>
+            <p className="eyebrow">Meta Ads · Tiendas Apple</p>
             <h1>
               <strong>Escalo resultados</strong>
-              <span>de coaches, negocios</span>
-              <span>e infoproductores</span>
+              <span>de tu tienda Apple</span>
               <strong>con anuncios.</strong>
             </h1>
             <div className="hero-cta">
@@ -71,9 +72,9 @@ export default function Home() {
             <p className="section-label">Qué incluye</p>
             <h2>Yo me encargo de todo.</h2>
             <p className="section-lead">
-              Vos seguís haciendo lo tuyo — crear contenido, vender, dar tus
-              programas. Yo me hago cargo de que la pauta funcione, de punta
-              a punta.
+              Vos seguís haciendo lo tuyo — vender, atender el local, manejar
+              el stock. Yo me hago cargo de que la pauta funcione, de punta a
+              punta.
             </p>
             <ul className="card-grid stagger">
               <li className="card reveal" data-n="01">
@@ -107,7 +108,10 @@ export default function Home() {
               <li className="card reveal" data-n="06">
                 <span className="card-tag">Reporte y revisión</span>
                 <h3>Dashboard en vivo + llamada semanal</h3>
-                <p>Reporte diario y una vez por semana vemos el panorama completo.</p>
+                <p>
+                  Reporte diario y una vez por semana vemos el panorama
+                  completo.
+                </p>
               </li>
             </ul>
           </div>
@@ -147,73 +151,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section" id="resultados">
-          <div className="wrap">
-            <p className="section-label">Resultados reales</p>
-            <h2>Los números, tal cual salen del Ads Manager.</h2>
-            <p className="section-lead">
-              Nada de mockups ni cifras infladas — capturas reales, directo
-              de las cuentas que gestiono.
-            </p>
-
-            <Carousel>
-              <li className="card result-card reveal">
-                <span className="card-tag">Ecommerce · Producto A</span>
-                <p className="result-headline">
-                  Invirtió <span className="result-metric">$1.034</span> y
-                  generó <span className="result-metric">$5.263</span> en
-                  ventas
-                </p>
-                <p className="result-sub">5.09x de retorno</p>
-                <div className="result-image">
-                  <Image
-                    src="/resultados/ecommerce-producto-a.jpeg"
-                    alt="Resultados de Meta Ads: gasto $1.034, facturación $5.263, ROAS 5.09x"
-                    width={1600}
-                    height={244}
-                  />
-                </div>
-              </li>
-              <li className="card result-card reveal">
-                <span className="card-tag">Ecommerce · Producto B</span>
-                <p className="result-headline">
-                  Invirtió <span className="result-metric">$1.615</span> y
-                  generó <span className="result-metric">$6.152</span> en
-                  ventas
-                </p>
-                <p className="result-sub">3.81x de retorno</p>
-                <div className="result-image">
-                  <Image
-                    src="/resultados/ecommerce-producto-b.jpeg"
-                    alt="Resultados de Meta Ads: gasto $1.615, facturación $6.152, ROAS 3.81x"
-                    width={1600}
-                    height={248}
-                  />
-                </div>
-              </li>
-              <li className="card result-card result-card--compact reveal">
-                <span className="card-tag">
-                  Tienda Apple · Campaña de conversaciones
-                </span>
-                <p className="result-headline">
-                  Trayendo clientes a{" "}
-                  <span className="result-metric">$0,20</span> por
-                  conversación
-                </p>
-                <p className="result-sub">668 conversaciones generadas</p>
-                <div className="result-image">
-                  <Image
-                    src="/resultados/tienda-apple-conversaciones.jpeg"
-                    alt="Resultados de Meta Ads: 668 conversaciones generadas a $0,20 cada una, $134,85 de gasto total"
-                    width={676}
-                    height={466}
-                  />
-                </div>
-              </li>
-            </Carousel>
-          </div>
-        </section>
-
         <section className="section" id="oferta">
           <div className="wrap offer-block">
             <p className="section-label">Cupo limitado</p>
@@ -227,7 +164,7 @@ export default function Home() {
             </p>
             <ul className="offer-bullets">
               <li>Diagnóstico de negocio + investigación de competencia</li>
-              <li>Gestión de evergreen, lanzamiento, leads o una mezcla</li>
+              <li>Gestión de campañas de conversión y remarketing</li>
               <li>Edición de creativos (video e imagen) incluida</li>
               <li>Reportes diarios y semanales + dashboard en vivo</li>
               <li>Fee fijo, sin % de tu inversión publicitaria</li>
@@ -321,10 +258,7 @@ export default function Home() {
 
       <footer className="wrap footer">
         <span>© {new Date().getFullYear()} Ramaruizmkt</span>
-        <span>
-          Gestión de Meta Ads para coaches, negocios e infoproductores · fee
-          fijo
-        </span>
+        <span>Gestión de Meta Ads para tiendas Apple · fee fijo</span>
       </footer>
     </div>
   );

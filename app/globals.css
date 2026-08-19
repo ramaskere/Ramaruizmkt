@@ -693,6 +693,11 @@ a {
     padding: 4rem 0 3.5rem;
   }
 
+  .hero h1 {
+    font-size: 1.85rem;
+    line-height: 1.2;
+  }
+
   .hero-rings span:nth-child(1) {
     width: 320px;
     height: 320px;

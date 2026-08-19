@@ -42,16 +42,19 @@ export default function Home() {
             <span />
           </div>
           <div className="hero-content">
-            <p className="eyebrow">Meta Ads · Infoproductores y coaches</p>
+            <p className="eyebrow">
+              Meta Ads · Coaches, negocios e infoproductores
+            </p>
             <h1>
-              <strong>Me dedico a escalar tus resultados</strong>
-              <span>con Meta Ads.</span>
-              <strong>Vos te olvidás de todo.</strong>
+              <strong>Escalo resultados de</strong>
+              <span>coaches, negocios</span>
+              <strong>e infoproductores.</strong>
             </h1>
             <p>
-              Gestión completa de pauta para infoproductores y coaches que ya
-              facturan y quieren escalar sin vivir pegados al Administrador
-              de anuncios. Fee fijo, cupo limitado a 2-3 clientes.
+              Gestión completa de pauta para coaches, negocios e
+              infoproductores que ya facturan y quieren escalar sin vivir
+              pegados al Administrador de anuncios. Fee fijo, cupo limitado a
+              2-3 clientes.
             </p>
             <div className="hero-cta">
               <a
@@ -72,7 +75,7 @@ export default function Home() {
         <section className="section" id="incluye">
           <div className="wrap">
             <p className="section-label">Qué incluye</p>
-            <h2>Yo me encargo de todo. Literal.</h2>
+            <h2>Yo me encargo de todo.</h2>
             <p className="section-lead">
               Vos seguís haciendo lo tuyo — crear contenido, vender, dar tus
               programas. Yo me hago cargo de que la pauta funcione, de punta
@@ -81,8 +84,8 @@ export default function Home() {
             <ul className="card-grid stagger">
               <li className="card reveal" data-n="01">
                 <span className="card-tag">Diagnóstico</span>
-                <h3>Reviso tu funnel primero</h3>
-                <p>Oferta, landing y pauta actual, antes de tocar nada.</p>
+                <h3>Reviso tu negocio primero</h3>
+                <p>Oferta, páginas y anuncios que ya usaste.</p>
               </li>
               <li className="card reveal" data-n="02">
                 <span className="card-tag">Investigación</span>
@@ -100,9 +103,12 @@ export default function Home() {
                 <p>Las piezas quedan listas por mí, no solo la pauta.</p>
               </li>
               <li className="card reveal" data-n="05">
-                <span className="card-tag">Funnel</span>
+                <span className="card-tag">Embudo de ventas</span>
                 <h3>Miro más allá de los anuncios</h3>
-                <p>Si algo no vende, reviso oferta y landing también.</p>
+                <p>
+                  Si algo no vende, reviso todo el embudo de ventas, no solo
+                  los anuncios.
+                </p>
               </li>
               <li className="card reveal" data-n="06">
                 <span className="card-tag">Reporte y revisión</span>
@@ -123,7 +129,7 @@ export default function Home() {
                 <span className="timeline-dot" aria-hidden="true" />
                 <h4>Diagnóstico</h4>
                 <p>
-                  Miro tu funnel y tu cuenta actual. Definimos juntos qué
+                  Miro tu negocio y tu cuenta actual. Definimos juntos qué
                   tipo de tráfico necesitás ahora.
                 </p>
               </li>
@@ -217,7 +223,7 @@ export default function Home() {
         <section className="section" id="oferta">
           <div className="wrap offer-block">
             <p className="section-label">Cupo limitado</p>
-            <h2>Fee fijo, ajustado a tu cuenta.</h2>
+            <h2>Fee fijo. Sin letra chica.</h2>
             <p className="section-lead">
               Trabajo con un máximo de 2-3 clientes en simultáneo — no es
               marketing, es lo que me permite dar atención de verdad en vez
@@ -226,7 +232,7 @@ export default function Home() {
               WhatsApp.
             </p>
             <ul className="offer-bullets">
-              <li>Diagnóstico de funnel + investigación de competencia</li>
+              <li>Diagnóstico de negocio + investigación de competencia</li>
               <li>Gestión de evergreen, lanzamiento, leads o una mezcla</li>
               <li>Edición de creativos (video e imagen) incluida</li>
               <li>Reportes diarios y semanales + dashboard en vivo</li>
@@ -321,7 +327,10 @@ export default function Home() {
 
       <footer className="wrap footer">
         <span>© {new Date().getFullYear()} Ramaruizmkt</span>
-        <span>Gestión de Meta Ads para infoproductores y coaches · fee fijo</span>
+        <span>
+          Gestión de Meta Ads para coaches, negocios e infoproductores · fee
+          fijo
+        </span>
       </footer>
     </div>
   );

@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Syne, Manrope } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const syne = Syne({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-sans",
   display: "swap",
 });
 
@@ -26,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`${syne.variable} ${manrope.variable}`}>{children}</body>
+    <html lang="es" className={inter.variable}>
+      <body>{children}</body>
     </html>
   );
 }

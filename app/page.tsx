@@ -14,29 +14,38 @@ export default function Home() {
           </a>
           <div className="nav-links">
             <a href="#incluye">Qué incluye</a>
+            <a href="#proceso">Proceso</a>
             <a href="#oferta">Fee y cupo</a>
-            <a href="#contacto">WhatsApp</a>
+            <a
+              className="nav-cta"
+              href={`${WHATSAPP_BASE}?text=${WHATSAPP_MSG}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Escribime
+            </a>
           </div>
         </nav>
       </header>
 
       <main id="top">
         <section className="hero wrap">
-          <div className="hero-plane" aria-hidden="true" />
+          <div className="hero-rings" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </div>
           <div className="hero-content">
-            <p className="brand-mark">
-              Rama
-              <span>ruiz</span>
-              mkt
-            </p>
+            <p className="eyebrow">Meta Ads · Infoproductores y coaches</p>
             <h1>
-              Me dedico a escalar tus resultados con Meta Ads. Vos te olvidás
-              de mirar anuncios y números.
+              <strong>Me dedico a escalar tus resultados</strong>
+              <span>con Meta Ads.</span>
+              <strong>Vos te olvidás de todo.</strong>
             </h1>
             <p>
               Gestión completa de pauta para infoproductores y coaches que ya
-              facturan y quieren escalar sin vivir pegados al Administrador de
-              anuncios. Fee fijo, cupo limitado a 2-3 clientes.
+              facturan y quieren escalar sin vivir pegados al Administrador
+              de anuncios. Fee fijo, cupo limitado a 2-3 clientes.
             </p>
             <div className="hero-cta">
               <a
@@ -45,10 +54,10 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Quiero mi cupo
+                Quiero mi cupo →
               </a>
               <a className="btn btn-ghost" href="#oferta">
-                Ver fee y cupo
+                Ver fee y cupo ↓
               </a>
             </div>
           </div>
@@ -57,51 +66,62 @@ export default function Home() {
         <section className="section" id="incluye">
           <div className="wrap">
             <p className="section-label">Qué incluye</p>
-            <h2>Todo lo referido a tu pauta, a cargo mío.</h2>
+            <h2>Yo me encargo de todo. Literal.</h2>
             <p className="section-lead">
               Vos seguís haciendo lo tuyo — crear contenido, vender, dar tus
-              programas. Yo me hago cargo de que la pauta funcione, de punta a
-              punta.
+              programas. Yo me hago cargo de que la pauta funcione, de punta
+              a punta.
             </p>
-            <ul className="perk-list">
-              <li>
-                <h3>Diagnóstico de funnel inicial</h3>
+            <ul className="card-grid">
+              <li className="card">
+                <span className="card-num">01</span>
+                <span className="card-tag">Diagnóstico</span>
+                <h3>Reviso tu funnel primero</h3>
                 <p>
-                  Reviso oferta, landing y pauta antes de tocar nada, para
+                  Oferta, landing y pauta actual, antes de tocar nada. Para
                   saber qué tipo de tráfico necesitás de verdad: evergreen,
                   lanzamiento, leads o una mezcla.
                 </p>
               </li>
-              <li>
-                <h3>Gestión completa de la pauta</h3>
+              <li className="card">
+                <span className="card-num">02</span>
+                <span className="card-tag">Gestión</span>
+                <h3>Pauta completa, de punta a punta</h3>
                 <p>
                   Armo y optimizo las campañas según lo que salga del
                   diagnóstico. Vos no tocás el Ads Manager.
                 </p>
               </li>
-              <li>
-                <h3>Miro el funnel completo</h3>
+              <li className="card">
+                <span className="card-num">03</span>
+                <span className="card-tag">Funnel</span>
+                <h3>Miro más allá de los anuncios</h3>
                 <p>
-                  Si algo no vende, no te tiro la pelota. Reviso si el
-                  problema está en la oferta, la landing o el copy, y te
-                  aviso apenas lo veo.
+                  Si algo no vende, no te tiro la pelota. Reviso oferta,
+                  landing y copy, y te aviso apenas lo veo.
                 </p>
               </li>
-              <li>
-                <h3>Reporte semanal</h3>
+              <li className="card">
+                <span className="card-num">04</span>
+                <span className="card-tag">Reporte</span>
+                <h3>Reporte semanal, corto y claro</h3>
                 <p>
-                  Un resumen corto y claro: qué se gastó, qué trajo, qué se
-                  ajusta. Nada de planillas de 40 columnas.
+                  Qué se gastó, qué trajo, qué se ajusta. Nada de planillas
+                  de 40 columnas.
                 </p>
               </li>
-              <li>
-                <h3>Llamada mensual de revisión</h3>
+              <li className="card">
+                <span className="card-num">05</span>
+                <span className="card-tag">Revisión</span>
+                <h3>Llamada mensual</h3>
                 <p>
                   Nos sentamos una vez al mes a ver el panorama completo y
                   decidir los próximos pasos.
                 </p>
               </li>
-              <li>
+              <li className="card">
+                <span className="card-num">06</span>
+                <span className="card-tag">Fee</span>
                 <h3>Fee fijo, no % de inversión</h3>
                 <p>
                   Pagás lo mismo factures lo que factures en ads. No tengo
@@ -121,8 +141,8 @@ export default function Home() {
               <article className="step">
                 <h3>Diagnóstico</h3>
                 <p>
-                  Miro tu funnel y tu cuenta actual. Definimos juntos qué tipo
-                  de tráfico necesitás ahora.
+                  Miro tu funnel y tu cuenta actual. Definimos juntos qué
+                  tipo de tráfico necesitás ahora.
                 </p>
               </article>
               <article className="step">
@@ -169,7 +189,7 @@ export default function Home() {
               <li>Fee fijo, sin % de tu inversión publicitaria</li>
               <li>Cupo limitado a 2-3 clientes simultáneos</li>
             </ul>
-            <div className="hero-cta">
+            <div className="hero-cta" style={{ justifyContent: "flex-start" }}>
               <a
                 className="btn btn-primary"
                 href={`${WHATSAPP_BASE}?text=${WHATSAPP_MSG}`}
@@ -179,6 +199,10 @@ export default function Home() {
                 Reservar mi cupo por WhatsApp
               </a>
             </div>
+            <p className="cupo-note">
+              <strong>Solo trabajo con 2-3 clientes a la vez.</strong>{" "}
+              Escribime y te confirmo si hay cupo este mes.
+            </p>
           </div>
         </section>
 

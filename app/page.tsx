@@ -104,19 +104,9 @@ export default function Home() {
                 <p>Si algo no vende, reviso oferta y landing también.</p>
               </li>
               <li className="card reveal" data-n="06">
-                <span className="card-tag">Reporte</span>
-                <h3>Reportes diarios + dashboard en vivo</h3>
-                <p>Diario, semanal, y un dashboard que mirás cuando querés.</p>
-              </li>
-              <li className="card reveal" data-n="07">
-                <span className="card-tag">Revisión</span>
-                <h3>Llamada mensual</h3>
-                <p>Una vez al mes, vemos el panorama completo.</p>
-              </li>
-              <li className="card reveal" data-n="08">
-                <span className="card-tag">Fee</span>
-                <h3>Fee fijo, no % de inversión</h3>
-                <p>Pagás lo mismo factures lo que factures.</p>
+                <span className="card-tag">Reporte y revisión</span>
+                <h3>Dashboard en vivo + llamada semanal</h3>
+                <p>Reporte diario y una vez por semana vemos el panorama completo.</p>
               </li>
             </ul>
           </div>
@@ -148,7 +138,7 @@ export default function Home() {
                 <span className="timeline-dot" aria-hidden="true" />
                 <h4>Reporto y ajusto</h4>
                 <p>
-                  Reporte semanal + llamada mensual para ir afinando sin
+                  Reporte diario + llamada semanal para ir afinando sin
                   sorpresas.
                 </p>
               </li>

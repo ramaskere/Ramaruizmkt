@@ -309,53 +309,47 @@ a {
   font-size: 0.95rem;
 }
 
+.results-niche {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
 .results-grid {
   list-style: none;
   display: grid;
   gap: 1.25rem;
   grid-template-columns: 1fr;
+  margin-bottom: 2.5rem;
 }
 
 @media (min-width: 700px) {
   .results-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .result-card {
-  padding: 1.5rem 1.5rem 1.75rem;
+  padding: 1.25rem 1.25rem 1.4rem;
 }
 
-.stat-row {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+.result-card--compact {
+  max-width: 24rem;
 }
 
-.stat-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+.result-image {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
 }
 
-.stat-label {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.stat-value {
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-  font-variant-numeric: tabular-nums;
-}
-
-.stat-value--accent {
-  color: var(--accent);
+.result-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .process {

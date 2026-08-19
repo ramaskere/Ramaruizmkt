@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const WHATSAPP_NUMBER = "5492645127846";
 const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}`;
 const WHATSAPP_MSG = encodeURIComponent(
@@ -169,66 +171,47 @@ export default function Home() {
             <p className="section-label">Resultados reales</p>
             <h2>Los números, tal cual salen del Ads Manager.</h2>
             <p className="section-lead">
-              Nada de mockups ni cifras infladas — capturas reales de cuentas
-              que gestiono. Este cliente de ecommerce, en dos productos
-              distintos:
+              Nada de mockups ni cifras infladas — capturas reales, directo
+              de las cuentas que gestiono.
             </p>
+
+            <p className="results-niche">Ecommerce</p>
             <ul className="results-grid">
               <li className="card result-card">
-                <span className="card-tag">Producto A · Ecommerce</span>
-                <div className="stat-row">
-                  <div className="stat-item">
-                    <span className="stat-label">Gasto</span>
-                    <span className="stat-value">$1.034</span>
-                  </div>
-                  <div className="stat-item">
-                    <span className="stat-label">Facturación</span>
-                    <span className="stat-value">$5.263</span>
-                  </div>
-                  <div className="stat-item">
-                    <span className="stat-label">ROAS</span>
-                    <span className="stat-value stat-value--accent">
-                      5.09x
-                    </span>
-                  </div>
+                <span className="card-tag">Producto A</span>
+                <div className="result-image">
+                  <Image
+                    src="/resultados/ecommerce-producto-a.jpeg"
+                    alt="Resultados de Meta Ads: gasto $1.034, facturación $5.263, ROAS 5.09x"
+                    width={1600}
+                    height={244}
+                  />
                 </div>
               </li>
               <li className="card result-card">
-                <span className="card-tag">Producto B · Ecommerce</span>
-                <div className="stat-row">
-                  <div className="stat-item">
-                    <span className="stat-label">Gasto</span>
-                    <span className="stat-value">$1.615</span>
-                  </div>
-                  <div className="stat-item">
-                    <span className="stat-label">Facturación</span>
-                    <span className="stat-value">$6.152</span>
-                  </div>
-                  <div className="stat-item">
-                    <span className="stat-label">ROAS</span>
-                    <span className="stat-value stat-value--accent">
-                      3.81x
-                    </span>
-                  </div>
+                <span className="card-tag">Producto B</span>
+                <div className="result-image">
+                  <Image
+                    src="/resultados/ecommerce-producto-b.jpeg"
+                    alt="Resultados de Meta Ads: gasto $1.615, facturación $6.152, ROAS 3.81x"
+                    width={1600}
+                    height={248}
+                  />
                 </div>
               </li>
-              <li className="card result-card">
+            </ul>
+
+            <p className="results-niche">Tienda Apple</p>
+            <ul className="results-grid">
+              <li className="card result-card result-card--compact">
                 <span className="card-tag">Campaña de conversaciones</span>
-                <div className="stat-row">
-                  <div className="stat-item">
-                    <span className="stat-label">Gasto</span>
-                    <span className="stat-value">$134,85</span>
-                  </div>
-                  <div className="stat-item">
-                    <span className="stat-label">Conversaciones</span>
-                    <span className="stat-value">668</span>
-                  </div>
-                  <div className="stat-item">
-                    <span className="stat-label">Costo por conversación</span>
-                    <span className="stat-value stat-value--accent">
-                      $0,20
-                    </span>
-                  </div>
+                <div className="result-image">
+                  <Image
+                    src="/resultados/tienda-apple-conversaciones.jpeg"
+                    alt="Resultados de Meta Ads: 668 conversaciones generadas a $0,20 cada una, $134,85 de gasto total"
+                    width={676}
+                    height={466}
+                  />
                 </div>
               </li>
             </ul>
@@ -287,9 +270,6 @@ export default function Home() {
                 rel="noreferrer"
               >
                 Hablar por WhatsApp
-              </a>
-              <a className="btn btn-ghost" href="mailto:hola@ramaruizmkt.com">
-                hola@ramaruizmkt.com
               </a>
             </div>
           </div>

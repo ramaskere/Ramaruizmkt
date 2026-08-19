@@ -88,6 +88,15 @@ export default function Home() {
               </li>
               <li className="card">
                 <span className="card-num">02</span>
+                <span className="card-tag">Investigación</span>
+                <h3>Estudio tu nicho y tu competencia</h3>
+                <p>
+                  Qué está haciendo la competencia, qué anuncios corre y qué
+                  le funciona, antes de armar la estrategia.
+                </p>
+              </li>
+              <li className="card">
+                <span className="card-num">03</span>
                 <span className="card-tag">Gestión</span>
                 <h3>Pauta completa, de punta a punta</h3>
                 <p>
@@ -96,7 +105,17 @@ export default function Home() {
                 </p>
               </li>
               <li className="card">
-                <span className="card-num">03</span>
+                <span className="card-num">04</span>
+                <span className="card-tag">Creativos</span>
+                <h3>Edito los anuncios, video e imagen</h3>
+                <p>
+                  Las piezas para tus campañas quedan listas por mí. Esto no
+                  es producción de contenido orgánico ni copywriting completo
+                  de tu negocio — eso sigue siendo tuyo.
+                </p>
+              </li>
+              <li className="card">
+                <span className="card-num">05</span>
                 <span className="card-tag">Funnel</span>
                 <h3>Miro más allá de los anuncios</h3>
                 <p>
@@ -105,16 +124,17 @@ export default function Home() {
                 </p>
               </li>
               <li className="card">
-                <span className="card-num">04</span>
+                <span className="card-num">06</span>
                 <span className="card-tag">Reporte</span>
-                <h3>Reporte semanal, corto y claro</h3>
+                <h3>Reportes diarios + dashboard en vivo</h3>
                 <p>
-                  Qué se gastó, qué trajo, qué se ajusta. Nada de planillas
-                  de 40 columnas.
+                  Reporte corto todos los días, resumen semanal, y un
+                  dashboard que podés mirar cuando quieras. Nada de esperar a
+                  fin de mes para saber cómo va.
                 </p>
               </li>
               <li className="card">
-                <span className="card-num">05</span>
+                <span className="card-num">07</span>
                 <span className="card-tag">Revisión</span>
                 <h3>Llamada mensual</h3>
                 <p>
@@ -123,7 +143,7 @@ export default function Home() {
                 </p>
               </li>
               <li className="card">
-                <span className="card-num">06</span>
+                <span className="card-num">08</span>
                 <span className="card-tag">Fee</span>
                 <h3>Fee fijo, no % de inversión</h3>
                 <p>
@@ -230,9 +250,10 @@ export default function Home() {
               WhatsApp.
             </p>
             <ul className="offer-bullets">
-              <li>Diagnóstico de funnel incluido al arrancar</li>
+              <li>Diagnóstico de funnel + investigación de competencia</li>
               <li>Gestión de evergreen, lanzamiento, leads o una mezcla</li>
-              <li>Reporte semanal + llamada mensual</li>
+              <li>Edición de creativos (video e imagen) incluida</li>
+              <li>Reportes diarios y semanales + dashboard en vivo</li>
               <li>Fee fijo, sin % de tu inversión publicitaria</li>
               <li>Cupo limitado a 2-3 clientes simultáneos</li>
             </ul>
@@ -255,13 +276,23 @@ export default function Home() {
 
         <section className="section contact" id="contacto">
           <div className="wrap">
-            <p className="section-label">Contacto</p>
-            <h2>Escribime y vemos si hay match</h2>
-            <p className="section-lead">
-              Contame cómo está tu pauta hoy — la manejás vos, tenés a
-              alguien, o no corrés nada — y te digo con sinceridad si tiene
-              sentido trabajar juntos.
+            <p className="section-label">Sobre mí</p>
+            <h2>No planeé ser media buyer. Pasó, y no volví atrás.</h2>
+            <p className="bio-text">
+              Arranqué como editor de video, sin pensar en meterme en pauta.
+              Pero en la agencia donde trabajaba, el que llevaba los anuncios
+              se fue de un día para el otro — y alguien tenía que hacerse
+              cargo. Me puse la camiseta, aprendí a las corridas, y terminé
+              metiendo las manos en cuentas grandes de infoproductores top de
+              Argentina y Latam.
             </p>
+            <p className="bio-text">
+              Ahí encontré lo mío: no en la edición, en hacer que la pauta
+              realmente venda. Hoy me dedico full time a esto — y esa mirada
+              de editor no se me fue, la uso para pensar las creatividades,
+              no solo la segmentación.
+            </p>
+            <p className="bio-signature">Rama Ruiz — gestión de Meta Ads.</p>
             <div className="contact-actions">
               <a
                 className="btn btn-primary"

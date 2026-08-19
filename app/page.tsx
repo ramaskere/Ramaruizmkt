@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "./reveal";
+import Carousel from "./carousel";
 
 const WHATSAPP_NUMBER = "5492645127846";
 const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}`;
@@ -155,10 +156,9 @@ export default function Home() {
               de las cuentas que gestiono.
             </p>
 
-            <p className="results-niche">Ecommerce</p>
-            <ul className="results-grid stagger">
+            <Carousel>
               <li className="card result-card reveal">
-                <span className="card-tag">Producto A</span>
+                <span className="card-tag">Ecommerce · Producto A</span>
                 <p className="result-headline">
                   Invirtió <span className="result-metric">$1.034</span> y
                   generó <span className="result-metric">$5.263</span> en
@@ -175,7 +175,7 @@ export default function Home() {
                 </div>
               </li>
               <li className="card result-card reveal">
-                <span className="card-tag">Producto B</span>
+                <span className="card-tag">Ecommerce · Producto B</span>
                 <p className="result-headline">
                   Invirtió <span className="result-metric">$1.615</span> y
                   generó <span className="result-metric">$6.152</span> en
@@ -191,12 +191,10 @@ export default function Home() {
                   />
                 </div>
               </li>
-            </ul>
-
-            <p className="results-niche">Tienda Apple</p>
-            <ul className="results-grid stagger">
               <li className="card result-card result-card--compact reveal">
-                <span className="card-tag">Campaña de conversaciones</span>
+                <span className="card-tag">
+                  Tienda Apple · Campaña de conversaciones
+                </span>
                 <p className="result-headline">
                   Trayendo clientes a{" "}
                   <span className="result-metric">$0,20</span> por
@@ -212,7 +210,7 @@ export default function Home() {
                   />
                 </div>
               </li>
-            </ul>
+            </Carousel>
           </div>
         </section>
 

@@ -468,35 +468,75 @@ a {
   font-size: 0.95rem;
 }
 
-.results-niche {
-  color: var(--muted);
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: 0 0 1rem;
+.carousel {
+  position: relative;
+  margin-bottom: 2.5rem;
 }
 
 .results-grid {
   list-style: none;
-  display: grid;
+  display: flex;
+  align-items: flex-start;
   gap: 1.25rem;
-  grid-template-columns: 1fr;
-  margin-bottom: 2.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-padding-left: 1px;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.4rem;
+  margin: 0 -1px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
 }
 
-@media (min-width: 700px) {
-  .results-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.results-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.results-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+}
+
+.results-grid > .result-card {
+  flex: 0 0 auto;
+  width: min(82vw, 420px);
+  scroll-snap-align: start;
 }
 
 .result-card {
   padding: 1.25rem 1.25rem 1.4rem;
 }
 
-.result-card--compact {
-  max-width: 24rem;
+.results-grid > .result-card--compact {
+  width: min(82vw, 320px);
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 0.85rem;
+}
+
+.carousel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid var(--card-line);
+  background: var(--card-bg);
+  color: var(--ink);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.carousel-btn:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
 }
 
 .result-headline {
@@ -521,6 +561,11 @@ a {
 }
 
 .result-image {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.02);
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -529,7 +574,8 @@ a {
 .result-image img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 .timeline--wide {

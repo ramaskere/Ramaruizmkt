@@ -15,9 +15,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Ramaruizmkt — Setup de ads para tu tienda",
+  title: "Ramaruizmkt — Meta Ads para infoproductores y coaches",
   description:
-    "Setup de publicidad en Meta: campañas, creatividades y soporte por WhatsApp. Pago único desde USD 197. Yo me encargo de todo.",
+    "Gestión completa de Meta Ads con fee fijo mensual. Cupo limitado a 2-3 clientes. Vos te olvidás del Ads Manager, yo me encargo de todo.",
 };
 
 export default function RootLayout({

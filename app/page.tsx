@@ -1,3 +1,9 @@
+const WHATSAPP_NUMBER = "5492645127846";
+const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}`;
+const WHATSAPP_MSG = encodeURIComponent(
+  "Hola! Vi tu página y quiero saber más sobre la gestión de Meta Ads."
+);
+
 export default function Home() {
   return (
     <div className="page">
@@ -8,7 +14,7 @@ export default function Home() {
           </a>
           <div className="nav-links">
             <a href="#incluye">Qué incluye</a>
-            <a href="#oferta">Setup</a>
+            <a href="#oferta">Fee y cupo</a>
             <a href="#contacto">WhatsApp</a>
           </div>
         </nav>
@@ -23,23 +29,26 @@ export default function Home() {
               <span>ruiz</span>
               mkt
             </p>
-            <h1>Setup de anuncios para tu tienda. Yo me encargo de todo.</h1>
+            <h1>
+              Me dedico a escalar tus resultados con Meta Ads. Vos te olvidás
+              de mirar anuncios y números.
+            </h1>
             <p>
-              Armo tus primeras campañas, creatividades y estructura en Meta.
-              Vos recibís soporte por WhatsApp y un sistema listo para vender —
-              sin fee mensual.
+              Gestión completa de pauta para infoproductores y coaches que ya
+              facturan y quieren escalar sin vivir pegados al Administrador de
+              anuncios. Fee fijo, cupo limitado a 2-3 clientes.
             </p>
             <div className="hero-cta">
               <a
                 className="btn btn-primary"
-                href="https://wa.me/"
+                href={`${WHATSAPP_BASE}?text=${WHATSAPP_MSG}`}
                 target="_blank"
                 rel="noreferrer"
               >
-                Quiero el Setup
+                Quiero mi cupo
               </a>
               <a className="btn btn-ghost" href="#oferta">
-                Ver precio
+                Ver fee y cupo
               </a>
             </div>
           </div>
@@ -48,52 +57,55 @@ export default function Home() {
         <section className="section" id="incluye">
           <div className="wrap">
             <p className="section-label">Qué incluye</p>
-            <h2>Todo referido a tu publicidad, a cargo mío.</h2>
+            <h2>Todo lo referido a tu pauta, a cargo mío.</h2>
             <p className="section-lead">
-              Un Setup completo para que tu tienda empiece a generar consultas
-              sin que tengas que pelearte con el administrador de anuncios.
+              Vos seguís haciendo lo tuyo — crear contenido, vender, dar tus
+              programas. Yo me hago cargo de que la pauta funcione, de punta a
+              punta.
             </p>
             <ul className="perk-list">
               <li>
-                <h3>Primeras campañas armadas</h3>
+                <h3>Diagnóstico de funnel inicial</h3>
                 <p>
-                  Configuro Business Manager, estructura y las primeras
-                  campañas listas para salir a vender.
+                  Reviso oferta, landing y pauta antes de tocar nada, para
+                  saber qué tipo de tráfico necesitás de verdad: evergreen,
+                  lanzamiento, leads o una mezcla.
                 </p>
               </li>
               <li>
-                <h3>Primeras creatividades</h3>
+                <h3>Gestión completa de la pauta</h3>
                 <p>
-                  Piezas y mensajes pensados para tu producto y tu audiencia,
-                  no plantillas genéricas.
+                  Armo y optimizo las campañas según lo que salga del
+                  diagnóstico. Vos no tocás el Ads Manager.
                 </p>
               </li>
               <li>
-                <h3>Presupuesto optimizado</h3>
+                <h3>Miro el funnel completo</h3>
                 <p>
-                  Te digo cuánto invertir para arrancar sin quemar plata ni
-                  quedarte corto de datos.
+                  Si algo no vende, no te tiro la pelota. Reviso si el
+                  problema está en la oferta, la landing o el copy, y te
+                  aviso apenas lo veo.
                 </p>
               </li>
               <li>
-                <h3>Soporte por WhatsApp</h3>
+                <h3>Reporte semanal</h3>
                 <p>
-                  15 días de acompañamiento directo por WhatsApp para dudas,
-                  ajustes y seguimiento del arranque.
+                  Un resumen corto y claro: qué se gastó, qué trajo, qué se
+                  ajusta. Nada de planillas de 40 columnas.
                 </p>
               </li>
               <li>
-                <h3>Guía para sostenerlo</h3>
+                <h3>Llamada mensual de revisión</h3>
                 <p>
-                  Manual simple para que puedas mantener las campañas vos, o
-                  seguir trabajando juntos si preferís delegar.
+                  Nos sentamos una vez al mes a ver el panorama completo y
+                  decidir los próximos pasos.
                 </p>
               </li>
               <li>
-                <h3>Listo en 15 días</h3>
+                <h3>Fee fijo, no % de inversión</h3>
                 <p>
-                  En dos semanas tenés el sistema funcionando. Sin procesos
-                  eternos ni agencias hinchadas.
+                  Pagás lo mismo factures lo que factures en ads. No tengo
+                  incentivo para que gastes de más.
                 </p>
               </li>
             </ul>
@@ -103,30 +115,28 @@ export default function Home() {
         <section className="section" id="proceso">
           <div className="wrap">
             <p className="section-label">Cómo funciona</p>
-            <h2>Tres pasos y salís al aire</h2>
-            <p className="section-lead">
-              Pago único. Yo ejecuto. Vos vendés.
-            </p>
+            <h2>Tres pasos y arrancamos</h2>
+            <p className="section-lead">Vos aprobás. Yo ejecuto y reporto.</p>
             <div className="process">
               <article className="step">
-                <h3>Brief por WhatsApp</h3>
+                <h3>Diagnóstico</h3>
                 <p>
-                  Me contás qué vendés, a quién y con qué presupuesto querés
-                  arrancar. Alineamos en minutos.
+                  Miro tu funnel y tu cuenta actual. Definimos juntos qué tipo
+                  de tráfico necesitás ahora.
                 </p>
               </article>
               <article className="step">
-                <h3>Armo y lanzo</h3>
+                <h3>Armo y gestiono</h3>
                 <p>
-                  Campañas, creatividades y estructura técnica. Vos solo
-                  aprobás y listo.
+                  Estructuro las campañas y me hago cargo de la optimización
+                  día a día.
                 </p>
               </article>
               <article className="step">
-                <h3>Acompañamiento</h3>
+                <h3>Reporto y ajusto</h3>
                 <p>
-                  15 días de soporte para ajustar, responder dudas y dejar el
-                  sistema estable.
+                  Reporte semanal + llamada mensual para ir afinando sin
+                  sorpresas.
                 </p>
               </article>
             </div>
@@ -135,39 +145,38 @@ export default function Home() {
 
         <section className="section" id="oferta">
           <div className="wrap offer-block">
-            <p className="section-label">Setup · Pago único</p>
-            <h2>Entrada accesible. Sin retainer.</h2>
+            <p className="section-label">Fee mensual · Cupo limitado</p>
+            <h2>Gestión completa, fee fijo.</h2>
             <p className="section-lead">
-              Otros Setup similares rondan los USD 350–450. Acá arrancás más
-              bajo, con todo hecho y soporte incluido. Ideal para tiendas que
-              quieren probar el sistema sin engancharse a un fee mensual.
+              Trabajo con un máximo de 2-3 clientes en simultáneo — no es
+              marketing, es lo que me permite dar atención de verdad en vez
+              de manejar 15 cuentas a la vez.
             </p>
             <div className="price-row">
               <p className="price">
-                <span className="price-anchor">USD 280</span>
-                <span className="price-amount">USD 197</span>
-                <span className="price-period">pago único</span>
+                <span className="price-amount">USD 600–1.200</span>
+                <span className="price-period">/ mes</span>
               </p>
               <p className="price-note">
-                Setup completo de publicidad + 15 días de soporte por WhatsApp.
-                El presupuesto de ads se paga aparte a Meta.
+                Fee fijo según tamaño de cuenta e inversión en pauta. El
+                presupuesto de ads se paga aparte a Meta.
               </p>
             </div>
             <ul className="offer-bullets">
-              <li>Yo me encargo de todo lo referido a tu publicidad</li>
-              <li>Campañas + creatividades + presupuesto optimizado</li>
-              <li>Soporte directo por WhatsApp (15 días)</li>
-              <li>Guía para mantenerlo vos después</li>
-              <li>Sin fee mensual · sin permanencia</li>
+              <li>Diagnóstico de funnel incluido al arrancar</li>
+              <li>Gestión de evergreen, lanzamiento, leads o una mezcla</li>
+              <li>Reporte semanal + llamada mensual</li>
+              <li>Fee fijo, sin % de tu inversión publicitaria</li>
+              <li>Cupo limitado a 2-3 clientes simultáneos</li>
             </ul>
             <div className="hero-cta">
               <a
                 className="btn btn-primary"
-                href="https://wa.me/"
+                href={`${WHATSAPP_BASE}?text=${WHATSAPP_MSG}`}
                 target="_blank"
                 rel="noreferrer"
               >
-                Reservar Setup por WhatsApp
+                Reservar mi cupo por WhatsApp
               </a>
             </div>
           </div>
@@ -176,15 +185,16 @@ export default function Home() {
         <section className="section contact" id="contacto">
           <div className="wrap">
             <p className="section-label">Contacto</p>
-            <h2>Escribime y vemos tu tienda</h2>
+            <h2>Escribime y vemos si hay match</h2>
             <p className="section-lead">
-              Mandame un WhatsApp con qué vendés y cuánto podés invertir en
-              ads. Te confirmo si el Setup te sirve y cómo arrancar.
+              Contame cómo está tu pauta hoy — la manejás vos, tenés a
+              alguien, o no corrés nada — y te digo con sinceridad si tiene
+              sentido trabajar juntos.
             </p>
             <div className="contact-actions">
               <a
                 className="btn btn-primary"
-                href="https://wa.me/"
+                href={`${WHATSAPP_BASE}?text=${WHATSAPP_MSG}`}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -200,7 +210,7 @@ export default function Home() {
 
       <footer className="wrap footer">
         <span>© {new Date().getFullYear()} Ramaruizmkt</span>
-        <span>Setup de ads para tiendas · pago único</span>
+        <span>Gestión de Meta Ads para infoproductores y coaches · fee fijo</span>
       </footer>
     </div>
   );

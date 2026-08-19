@@ -46,16 +46,11 @@ export default function Home() {
               Meta Ads · Coaches, negocios e infoproductores
             </p>
             <h1>
-              <strong>Escalo resultados de</strong>
-              <span>coaches, negocios</span>
-              <strong>e infoproductores.</strong>
+              <strong>Escalo resultados</strong>
+              <span>de coaches, negocios</span>
+              <span>e infoproductores</span>
+              <strong>con anuncios.</strong>
             </h1>
-            <p>
-              Gestión completa de pauta para coaches, negocios e
-              infoproductores que ya facturan y quieren escalar sin vivir
-              pegados al Administrador de anuncios. Fee fijo, cupo limitado a
-              2-3 clientes.
-            </p>
             <div className="hero-cta">
               <a
                 className="btn btn-primary"

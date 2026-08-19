@@ -208,13 +208,6 @@ a {
   color: var(--muted);
 }
 
-.hero-content > p {
-  color: var(--muted);
-  font-size: 1.08rem;
-  max-width: 32rem;
-  margin: 0 auto 2.25rem;
-}
-
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
@@ -245,12 +238,8 @@ a {
   animation-delay: 0.08s;
 }
 
-.hero-content > p {
-  animation-delay: 0.16s;
-}
-
 .hero-content .hero-cta {
-  animation-delay: 0.24s;
+  animation-delay: 0.2s;
 }
 
 .section {

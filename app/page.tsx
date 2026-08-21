@@ -18,7 +18,6 @@ export default function Home() {
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#clientes">Con quién trabajé</a>
             <a href="#planes">Planes</a>
-            <a href="#oferta">Cupo</a>
             <a
               className="nav-cta"
               href={WHATSAPP_HREF}
@@ -64,8 +63,8 @@ export default function Home() {
               >
                 Quiero mi cupo →
               </a>
-              <a className="btn btn-ghost" href="#oferta">
-                Ver cupo ↓
+              <a className="btn btn-ghost" href="#planes">
+                Ver planes ↓
               </a>
             </div>
             <p className="hero-stats">
@@ -81,8 +80,8 @@ export default function Home() {
               <span className="stat-block-label">Gestionados en Meta Ads</span>
             </div>
             <div className="stat-block reveal">
-              <span className="stat-block-value">3</span>
-              <span className="stat-block-label">Formatos dominados</span>
+              <span className="stat-block-value">+$2M</span>
+              <span className="stat-block-label">Generados para clientes</span>
             </div>
             <div className="stat-block reveal">
               <span className="stat-block-value">2-3</span>
@@ -284,19 +283,24 @@ export default function Home() {
         <section className="section" id="planes">
           <div className="wrap">
             <p className="section-label">Planes</p>
-            <h2>Elegís el nivel de involucramiento.</h2>
+            <h2>3 formas de contratarme.</h2>
             <p className="section-lead">
-              Tres formas de trabajar juntos, según cuánto querés delegar.
+              Elegís cuánto querés delegar. Cada plan te dice exactamente qué
+              te llevás.
             </p>
             <ul className="card-grid stagger">
-              <li className="card plan-card reveal">
+              <li className="card plan-card reveal" data-n="01">
                 <span className="card-tag">Plan 1</span>
                 <h3>Consultoría 1 a 1</h3>
-                <p>
-                  Llamada + análisis de lo que ya estás haciendo. Resolvemos
-                  dudas, vemos qué mejorar, y salís con un plan de acción
-                  concreto para ejecutar vos.
+                <p className="plan-tagline">
+                  Para resolver dudas y armar tu propio plan.
                 </p>
+                <ul className="offer-bullets plan-includes">
+                  <li>Llamada 1 a 1</li>
+                  <li>Análisis de lo que ya estás haciendo</li>
+                  <li>Resolución de dudas puntuales</li>
+                  <li>Plan de acción concreto para que lo ejecutes vos</li>
+                </ul>
                 <a
                   className="btn btn-ghost plan-cta"
                   href={whatsappLink(
@@ -308,14 +312,19 @@ export default function Home() {
                   Consultar por WhatsApp →
                 </a>
               </li>
-              <li className="card plan-card reveal">
+              <li className="card plan-card reveal" data-n="02">
                 <span className="card-tag">Plan 2</span>
                 <h3>Plan Básico</h3>
-                <p>
-                  Investigación, estrategia, estructura y armado de los
-                  anuncios. Te dejo las campañas configuradas y lanzadas —
-                  después las gestionás vos.
+                <p className="plan-tagline">
+                  Para arrancar con todo armado y listo.
                 </p>
+                <ul className="offer-bullets plan-includes">
+                  <li>Investigación de nicho y competencia</li>
+                  <li>Estrategia y estructura de campaña</li>
+                  <li>Armado de los anuncios</li>
+                  <li>Campañas configuradas y lanzadas</li>
+                  <li>Después, la gestión queda en tus manos</li>
+                </ul>
                 <a
                   className="btn btn-ghost plan-cta"
                   href={whatsappLink(
@@ -327,15 +336,21 @@ export default function Home() {
                   Consultar por WhatsApp →
                 </a>
               </li>
-              <li className="card plan-card plan-card--highlight reveal">
+              <li
+                className="card plan-card plan-card--highlight reveal"
+                data-n="03"
+              >
                 <span className="card-tag">Plan 3 · El más completo</span>
                 <h3>Gestión de Tráfico</h3>
-                <p>
-                  Investigación, estrategia, creación y edición de los
-                  anuncios, configuración, publicación, seguimiento,
-                  optimización y métricas. Yo me encargo de todo, de punta a
-                  punta.
-                </p>
+                <p className="plan-tagline">Para no tener que tocar nada.</p>
+                <ul className="offer-bullets plan-includes">
+                  <li>Investigación y estrategia</li>
+                  <li>Creación y edición de los anuncios</li>
+                  <li>Configuración y publicación</li>
+                  <li>Seguimiento y optimización</li>
+                  <li>Reportes y métricas</li>
+                  <li>Gestión de punta a punta, todo el mes</li>
+                </ul>
                 <a
                   className="btn btn-primary plan-cta"
                   href={whatsappLink(
@@ -429,76 +444,6 @@ export default function Home() {
                 </p>
               </li>
             </ul>
-          </div>
-        </section>
-
-        <section className="section">
-          <div className="wrap">
-            <p className="section-label">Más contenido</p>
-            <h2>Esto todavía no existe, pero va a estar.</h2>
-            <p className="section-lead">
-              Prefiero no mostrarte testimonios o notas que no son reales.
-              Cuando los tenga, van a estar acá.
-            </p>
-            <ul className="soon-grid stagger">
-              <li className="soon-card reveal">
-                <span className="soon-tag">Próximamente</span>
-                <h3>Testimonios</h3>
-                <p>
-                  Los clientes que trabajen conmigo van a poder dejar su
-                  opinión acá.
-                </p>
-              </li>
-              <li className="soon-card reveal">
-                <span className="soon-tag">Próximamente</span>
-                <h3>Artículos</h3>
-                <p>
-                  Notas sobre pauta, embudos de venta y lo que voy
-                  aprendiendo gestionando cuentas.
-                </p>
-              </li>
-              <li className="soon-card reveal">
-                <span className="soon-tag">Próximamente</span>
-                <h3>Charlas</h3>
-                <p>Si en algún momento sumo esto, va a aparecer acá.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="section" id="oferta">
-          <div className="wrap offer-block">
-            <p className="section-label">Cupo limitado</p>
-            <h2>Fee fijo. Sin letra chica.</h2>
-            <p className="section-lead">
-              Trabajo con un máximo de 2-3 clientes en simultáneo — no es
-              marketing, es lo que me permite dar atención de verdad en vez
-              de manejar 15 cuentas a la vez. El fee se ajusta según el
-              tamaño de tu cuenta e inversión en pauta — te lo cuento por
-              WhatsApp.
-            </p>
-            <ul className="offer-bullets">
-              <li>Diagnóstico de negocio + investigación de competencia</li>
-              <li>Gestión de evergreen, lanzamiento, leads o una mezcla</li>
-              <li>Edición de creativos (video e imagen) incluida</li>
-              <li>Reportes diarios y semanales + dashboard en vivo</li>
-              <li>Fee fijo, sin % de tu inversión publicitaria</li>
-              <li>Cupo limitado a 2-3 clientes simultáneos</li>
-            </ul>
-            <div className="hero-cta" style={{ justifyContent: "flex-start" }}>
-              <a
-                className="btn btn-primary"
-                href={WHATSAPP_HREF}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Reservar mi cupo por WhatsApp
-              </a>
-            </div>
-            <p className="cupo-note">
-              <strong>Solo trabajo con 2-3 clientes a la vez.</strong>{" "}
-              Escribime y te confirmo si hay cupo este mes.
-            </p>
           </div>
         </section>
 

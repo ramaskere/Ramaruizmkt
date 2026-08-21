@@ -396,48 +396,6 @@ a {
   letter-spacing: 0.02em;
 }
 
-.soon-grid {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
-}
-
-@media (min-width: 700px) {
-  .soon-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.soon-card {
-  padding: 1.75rem 1.6rem;
-  border: 1px dashed var(--card-line);
-  border-radius: var(--radius-card);
-}
-
-.soon-tag {
-  display: inline-block;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.05);
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  margin-bottom: 0.9rem;
-}
-
-.soon-card h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.soon-card p {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
 
 .cta-band {
   padding: 5rem 0;
@@ -752,8 +710,16 @@ a {
   flex-direction: column;
 }
 
-.plan-card p {
+.plan-tagline {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+.plan-includes {
   flex-grow: 1;
+  margin-bottom: 0;
 }
 
 .plan-card--highlight {
@@ -906,19 +872,6 @@ a {
   border-radius: 50%;
   background: var(--accent);
   box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.18);
-}
-
-.cupo-note {
-  margin-top: 1.75rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.92rem;
-  max-width: 34rem;
-}
-
-.cupo-note strong {
-  color: var(--ink);
 }
 
 .contact-actions {

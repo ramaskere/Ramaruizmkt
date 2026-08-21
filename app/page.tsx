@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Reveal from "./reveal";
-import Carousel from "./carousel";
 import { whatsappLink } from "./lib/whatsapp";
 
 const WHATSAPP_HREF = whatsappLink(
@@ -18,8 +16,8 @@ export default function Home() {
           </a>
           <div className="nav-links">
             <a href="#sobre-mi">Sobre mí</a>
-            <a href="#incluye">Qué incluye</a>
-            <a href="#resultados">Resultados</a>
+            <a href="#clientes">Con quién trabajé</a>
+            <a href="#planes">Planes</a>
             <a href="#oferta">Cupo</a>
             <a
               className="nav-cta"
@@ -118,7 +116,8 @@ export default function Home() {
                 <p className="bio-text">
                   Me puse la camiseta, aprendí a las corridas, y terminé
                   metiendo las manos en cuentas grandes de infoproductores
-                  top de Argentina y Latam — gestionando lanzamientos,
+                  top de Argentina y Latam — como las de Tino Mossu, Teo
+                  Tinivelli y Jesús Tasarolo — gestionando lanzamientos,
                   evergreen y ecommerce. Ahí encontré lo mío: no en la
                   edición, en hacer que la pauta realmente venda.
                 </p>
@@ -173,6 +172,181 @@ export default function Home() {
               <li className="skill-pill">Creativos (video e imagen)</li>
               <li className="skill-pill">Embudos de venta</li>
               <li className="skill-pill">Reportes y dashboards</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="section" id="clientes">
+          <div className="wrap">
+            <p className="section-label">Con quién trabajé</p>
+            <h2>Cuentas reales, con nombre y apellido.</h2>
+            <p className="section-lead">
+              Nada de "cuentas top" genéricas. Estos son los infoproductores
+              con los que laburé, y lo que gestionamos juntos.
+            </p>
+            <ul className="card-grid stagger">
+              <li className="card client-card reveal">
+                <span className="card-tag">Evergreen + Lanzamientos</span>
+                <h3>Tino Mossu &amp; Teo Tinivelli</h3>
+                <div className="client-stats">
+                  <div className="client-stat">
+                    <span className="client-stat-value">1.5 años</span>
+                    <span className="client-stat-label">Trabajando juntos</span>
+                  </div>
+                  <div className="client-stat">
+                    <span className="client-stat-value">$500K</span>
+                    <span className="client-stat-label">En meses fuertes</span>
+                  </div>
+                  <div className="client-stat">
+                    <span className="client-stat-value">+$3.5M</span>
+                    <span className="client-stat-label">Generados en total</span>
+                  </div>
+                </div>
+              </li>
+              <li className="card client-card reveal">
+                <span className="card-tag">Lanzamientos</span>
+                <h3>Jesús Tasarolo</h3>
+                <div className="client-stats">
+                  <div className="client-stat">
+                    <span className="client-stat-value">2</span>
+                    <span className="client-stat-label">
+                      Lanzamientos gestionados
+                    </span>
+                  </div>
+                  <div className="client-stat">
+                    <span className="client-stat-value">+$20K</span>
+                    <span className="client-stat-label">
+                      Invertidos en pauta
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li className="card client-card reveal">
+                <span className="card-tag">Ecommerce · Producto A</span>
+                <h3>Cliente de ecommerce</h3>
+                <div className="client-stats">
+                  <div className="client-stat">
+                    <span className="client-stat-value">$1.034</span>
+                    <span className="client-stat-label">Invertidos</span>
+                  </div>
+                  <div className="client-stat">
+                    <span className="client-stat-value">$5.263</span>
+                    <span className="client-stat-label">En ventas</span>
+                  </div>
+                  <div className="client-stat">
+                    <span className="client-stat-value">5.09x</span>
+                    <span className="client-stat-label">De retorno</span>
+                  </div>
+                </div>
+              </li>
+              <li className="card client-card reveal">
+                <span className="card-tag">Ecommerce · Producto B</span>
+                <h3>Cliente de ecommerce</h3>
+                <div className="client-stats">
+                  <div className="client-stat">
+                    <span className="client-stat-value">$1.615</span>
+                    <span className="client-stat-label">Invertidos</span>
+                  </div>
+                  <div className="client-stat">
+                    <span className="client-stat-value">$6.152</span>
+                    <span className="client-stat-label">En ventas</span>
+                  </div>
+                  <div className="client-stat">
+                    <span className="client-stat-value">3.81x</span>
+                    <span className="client-stat-label">De retorno</span>
+                  </div>
+                </div>
+              </li>
+              <li className="card client-card reveal">
+                <span className="card-tag">Tienda Apple</span>
+                <h3>Campaña de conversaciones</h3>
+                <div className="client-stats">
+                  <div className="client-stat">
+                    <span className="client-stat-value">668</span>
+                    <span className="client-stat-label">Conversaciones</span>
+                  </div>
+                  <div className="client-stat">
+                    <span className="client-stat-value">$0,20</span>
+                    <span className="client-stat-label">
+                      Por conversación
+                    </span>
+                  </div>
+                  <div className="client-stat">
+                    <span className="client-stat-value">$134,85</span>
+                    <span className="client-stat-label">Gasto total</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="section" id="planes">
+          <div className="wrap">
+            <p className="section-label">Planes</p>
+            <h2>Elegís el nivel de involucramiento.</h2>
+            <p className="section-lead">
+              Tres formas de trabajar juntos, según cuánto querés delegar.
+            </p>
+            <ul className="card-grid stagger">
+              <li className="card plan-card reveal">
+                <span className="card-tag">Plan 1</span>
+                <h3>Consultoría 1 a 1</h3>
+                <p>
+                  Llamada + análisis de lo que ya estás haciendo. Resolvemos
+                  dudas, vemos qué mejorar, y salís con un plan de acción
+                  concreto para ejecutar vos.
+                </p>
+                <a
+                  className="btn btn-ghost plan-cta"
+                  href={whatsappLink(
+                    "Hola! Vi tu página y quiero saber más sobre la Consultoría 1 a 1."
+                  )}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Consultar por WhatsApp →
+                </a>
+              </li>
+              <li className="card plan-card reveal">
+                <span className="card-tag">Plan 2</span>
+                <h3>Plan Básico</h3>
+                <p>
+                  Investigación, estrategia, estructura y armado de los
+                  anuncios. Te dejo las campañas configuradas y lanzadas —
+                  después las gestionás vos.
+                </p>
+                <a
+                  className="btn btn-ghost plan-cta"
+                  href={whatsappLink(
+                    "Hola! Vi tu página y quiero saber más sobre el Plan Básico."
+                  )}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Consultar por WhatsApp →
+                </a>
+              </li>
+              <li className="card plan-card plan-card--highlight reveal">
+                <span className="card-tag">Plan 3 · El más completo</span>
+                <h3>Gestión de Tráfico</h3>
+                <p>
+                  Investigación, estrategia, creación y edición de los
+                  anuncios, configuración, publicación, seguimiento,
+                  optimización y métricas. Yo me encargo de todo, de punta a
+                  punta.
+                </p>
+                <a
+                  className="btn btn-primary plan-cta"
+                  href={whatsappLink(
+                    "Hola! Vi tu página y quiero saber más sobre la Gestión de Tráfico completa."
+                  )}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Reservar mi cupo →
+                </a>
+              </li>
             </ul>
           </div>
         </section>
@@ -255,88 +429,6 @@ export default function Home() {
                 </p>
               </li>
             </ul>
-          </div>
-        </section>
-
-        <section className="section" id="resultados">
-          <div className="wrap">
-            <p className="section-label">Resultados reales</p>
-            <h2>Los números, tal cual salen del Ads Manager.</h2>
-            <p className="section-lead">
-              Nada de mockups ni cifras infladas — capturas reales, directo
-              de las cuentas que gestiono.
-            </p>
-
-            <Carousel>
-              <li className="card result-card reveal">
-                <span className="card-tag">Ecommerce · Producto A</span>
-                <p className="result-headline">
-                  Invirtió <span className="result-metric">$1.034</span> y
-                  generó <span className="result-metric">$5.263</span> en
-                  ventas
-                </p>
-                <p className="result-sub">5.09x de retorno</p>
-                <ul className="result-tags">
-                  <li>Ecommerce</li>
-                  <li>Evergreen</li>
-                  <li>ROAS</li>
-                </ul>
-                <div className="result-image">
-                  <Image
-                    src="/resultados/ecommerce-producto-a.jpeg"
-                    alt="Resultados de Meta Ads: gasto $1.034, facturación $5.263, ROAS 5.09x"
-                    width={1600}
-                    height={244}
-                  />
-                </div>
-              </li>
-              <li className="card result-card reveal">
-                <span className="card-tag">Ecommerce · Producto B</span>
-                <p className="result-headline">
-                  Invirtió <span className="result-metric">$1.615</span> y
-                  generó <span className="result-metric">$6.152</span> en
-                  ventas
-                </p>
-                <p className="result-sub">3.81x de retorno</p>
-                <ul className="result-tags">
-                  <li>Ecommerce</li>
-                  <li>Evergreen</li>
-                  <li>ROAS</li>
-                </ul>
-                <div className="result-image">
-                  <Image
-                    src="/resultados/ecommerce-producto-b.jpeg"
-                    alt="Resultados de Meta Ads: gasto $1.615, facturación $6.152, ROAS 3.81x"
-                    width={1600}
-                    height={248}
-                  />
-                </div>
-              </li>
-              <li className="card result-card result-card--compact reveal">
-                <span className="card-tag">
-                  Tienda Apple · Campaña de conversaciones
-                </span>
-                <p className="result-headline">
-                  Trayendo clientes a{" "}
-                  <span className="result-metric">$0,20</span> por
-                  conversación
-                </p>
-                <p className="result-sub">668 conversaciones generadas</p>
-                <ul className="result-tags">
-                  <li>Retail</li>
-                  <li>Conversaciones</li>
-                  <li>WhatsApp Ads</li>
-                </ul>
-                <div className="result-image">
-                  <Image
-                    src="/resultados/tienda-apple-conversaciones.jpeg"
-                    alt="Resultados de Meta Ads: 668 conversaciones generadas a $0,20 cada una, $134,85 de gasto total"
-                    width={676}
-                    height={466}
-                  />
-                </div>
-              </li>
-            </Carousel>
           </div>
         </section>
 

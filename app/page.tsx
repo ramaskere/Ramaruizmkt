@@ -17,8 +17,8 @@ export default function Home() {
             Ramaruizmkt
           </a>
           <div className="nav-links">
+            <a href="#sobre-mi">Sobre mí</a>
             <a href="#incluye">Qué incluye</a>
-            <a href="#proceso">Proceso</a>
             <a href="#resultados">Resultados</a>
             <a href="#oferta">Cupo</a>
             <a
@@ -41,6 +41,13 @@ export default function Home() {
             <span />
           </div>
           <div className="hero-content">
+            <div className="hero-avatar">
+              <span className="avatar-initials">RR</span>
+            </div>
+            <p className="availability-pill">
+              <span className="pill-dot" aria-hidden="true" />
+              Cupo disponible — 2 a 3 clientes este mes
+            </p>
             <p className="eyebrow">
               Meta Ads · Coaches, negocios e infoproductores
             </p>
@@ -63,6 +70,110 @@ export default function Home() {
                 Ver cupo ↓
               </a>
             </div>
+            <p className="hero-stats">
+              +$700K gestionados · Lanzamientos · Evergreen · Ecommerce
+            </p>
+          </div>
+        </section>
+
+        <section className="stats-band wrap">
+          <div className="stats-bento stagger">
+            <div className="stat-block reveal">
+              <span className="stat-block-value">+$700K</span>
+              <span className="stat-block-label">Gestionados en Meta Ads</span>
+            </div>
+            <div className="stat-block reveal">
+              <span className="stat-block-value">3</span>
+              <span className="stat-block-label">Formatos dominados</span>
+            </div>
+            <div className="stat-block reveal">
+              <span className="stat-block-value">2-3</span>
+              <span className="stat-block-label">Cupos por mes</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="section contact" id="sobre-mi">
+          <div className="wrap">
+            <p className="section-label">Sobre mí</p>
+            <h2>No planeé ser media buyer. Pasó, y no volví atrás.</h2>
+            <div className="bio-highlights reveal">
+              <span className="bio-stat">
+                <strong>+$700K</strong> gestionados en Meta Ads
+              </span>
+              <span className="bio-tag-group">
+                <span className="bio-tag">Lanzamientos</span>
+                <span className="bio-tag">Evergreen</span>
+                <span className="bio-tag">Ecommerce</span>
+              </span>
+            </div>
+            <div className="bio-layout">
+              <div className="reveal">
+                <p className="bio-text">
+                  Arranqué como editor de video, sin pensar en meterme en
+                  pauta. Pero en la agencia donde trabajaba, el que llevaba
+                  los anuncios se fue de un día para el otro — y alguien
+                  tenía que hacerse cargo.
+                </p>
+                <p className="bio-text">
+                  Me puse la camiseta, aprendí a las corridas, y terminé
+                  metiendo las manos en cuentas grandes de infoproductores
+                  top de Argentina y Latam — gestionando lanzamientos,
+                  evergreen y ecommerce. Ahí encontré lo mío: no en la
+                  edición, en hacer que la pauta realmente venda.
+                </p>
+                <div className="bio-signature-row">
+                  <div className="bio-avatar">
+                    <span className="avatar-initials">RR</span>
+                  </div>
+                  <p className="bio-signature">
+                    Rama Ruiz — gestión de Meta Ads.
+                  </p>
+                </div>
+                <div className="contact-actions">
+                  <a
+                    className="btn btn-primary"
+                    href={WHATSAPP_HREF}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Hablar por WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <ul className="timeline stagger">
+                <li className="timeline-item reveal">
+                  <span className="timeline-dot" aria-hidden="true" />
+                  <h4>Editor de video</h4>
+                  <p>Así arranqué, editando piezas para otros.</p>
+                </li>
+                <li className="timeline-item reveal">
+                  <span className="timeline-dot" aria-hidden="true" />
+                  <h4>Se hizo cargo de los anuncios</h4>
+                  <p>En la agencia, cuando nadie más podía, me tocó a mí.</p>
+                </li>
+                <li className="timeline-item reveal">
+                  <span className="timeline-dot" aria-hidden="true" />
+                  <h4>Full time en Meta Ads</h4>
+                  <p>
+                    Hoy gestiono cuentas grandes de infoproductores top de
+                    Argentina y Latam.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <ul className="skills-pills reveal">
+              <li className="skill-pill">Meta Ads</li>
+              <li className="skill-pill">Evergreen</li>
+              <li className="skill-pill">Lanzamientos</li>
+              <li className="skill-pill">Ecommerce</li>
+              <li className="skill-pill">Investigación de competencia</li>
+              <li className="skill-pill">Creativos (video e imagen)</li>
+              <li className="skill-pill">Embudos de venta</li>
+              <li className="skill-pill">Reportes y dashboards</li>
+            </ul>
           </div>
         </section>
 
@@ -165,6 +276,11 @@ export default function Home() {
                   ventas
                 </p>
                 <p className="result-sub">5.09x de retorno</p>
+                <ul className="result-tags">
+                  <li>Ecommerce</li>
+                  <li>Evergreen</li>
+                  <li>ROAS</li>
+                </ul>
                 <div className="result-image">
                   <Image
                     src="/resultados/ecommerce-producto-a.jpeg"
@@ -182,6 +298,11 @@ export default function Home() {
                   ventas
                 </p>
                 <p className="result-sub">3.81x de retorno</p>
+                <ul className="result-tags">
+                  <li>Ecommerce</li>
+                  <li>Evergreen</li>
+                  <li>ROAS</li>
+                </ul>
                 <div className="result-image">
                   <Image
                     src="/resultados/ecommerce-producto-b.jpeg"
@@ -201,6 +322,11 @@ export default function Home() {
                   conversación
                 </p>
                 <p className="result-sub">668 conversaciones generadas</p>
+                <ul className="result-tags">
+                  <li>Retail</li>
+                  <li>Conversaciones</li>
+                  <li>WhatsApp Ads</li>
+                </ul>
                 <div className="result-image">
                   <Image
                     src="/resultados/tienda-apple-conversaciones.jpeg"
@@ -211,6 +337,40 @@ export default function Home() {
                 </div>
               </li>
             </Carousel>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="wrap">
+            <p className="section-label">Más contenido</p>
+            <h2>Esto todavía no existe, pero va a estar.</h2>
+            <p className="section-lead">
+              Prefiero no mostrarte testimonios o notas que no son reales.
+              Cuando los tenga, van a estar acá.
+            </p>
+            <ul className="soon-grid stagger">
+              <li className="soon-card reveal">
+                <span className="soon-tag">Próximamente</span>
+                <h3>Testimonios</h3>
+                <p>
+                  Los clientes que trabajen conmigo van a poder dejar su
+                  opinión acá.
+                </p>
+              </li>
+              <li className="soon-card reveal">
+                <span className="soon-tag">Próximamente</span>
+                <h3>Artículos</h3>
+                <p>
+                  Notas sobre pauta, embudos de venta y lo que voy
+                  aprendiendo gestionando cuentas.
+                </p>
+              </li>
+              <li className="soon-card reveal">
+                <span className="soon-tag">Próximamente</span>
+                <h3>Charlas</h3>
+                <p>Si en algún momento sumo esto, va a aparecer acá.</p>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -250,71 +410,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section contact" id="contacto">
-          <div className="wrap">
-            <p className="section-label">Sobre mí</p>
-            <h2>No planeé ser media buyer. Pasó, y no volví atrás.</h2>
-            <div className="bio-highlights reveal">
-              <span className="bio-stat">
-                <strong>+$700K</strong> gestionados en Meta Ads
-              </span>
-              <span className="bio-tag-group">
-                <span className="bio-tag">Lanzamientos</span>
-                <span className="bio-tag">Evergreen</span>
-                <span className="bio-tag">Ecommerce</span>
-              </span>
-            </div>
-            <div className="bio-layout">
-              <div className="reveal">
-                <p className="bio-text">
-                  Arranqué como editor de video, sin pensar en meterme en
-                  pauta. Pero en la agencia donde trabajaba, el que llevaba
-                  los anuncios se fue de un día para el otro — y alguien
-                  tenía que hacerse cargo.
-                </p>
-                <p className="bio-text">
-                  Me puse la camiseta, aprendí a las corridas, y terminé
-                  metiendo las manos en cuentas grandes de infoproductores
-                  top de Argentina y Latam — gestionando lanzamientos,
-                  evergreen y ecommerce. Ahí encontré lo mío: no en la
-                  edición, en hacer que la pauta realmente venda.
-                </p>
-                <p className="bio-signature">
-                  Rama Ruiz — gestión de Meta Ads.
-                </p>
-                <div className="contact-actions">
-                  <a
-                    className="btn btn-primary"
-                    href={WHATSAPP_HREF}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Hablar por WhatsApp
-                  </a>
-                </div>
-              </div>
-
-              <ul className="timeline stagger">
-                <li className="timeline-item reveal">
-                  <span className="timeline-dot" aria-hidden="true" />
-                  <h4>Editor de video</h4>
-                  <p>Así arranqué, editando piezas para otros.</p>
-                </li>
-                <li className="timeline-item reveal">
-                  <span className="timeline-dot" aria-hidden="true" />
-                  <h4>Se hizo cargo de los anuncios</h4>
-                  <p>En la agencia, cuando nadie más podía, me tocó a mí.</p>
-                </li>
-                <li className="timeline-item reveal">
-                  <span className="timeline-dot" aria-hidden="true" />
-                  <h4>Full time en Meta Ads</h4>
-                  <p>
-                    Hoy gestiono cuentas grandes de infoproductores top de
-                    Argentina y Latam.
-                  </p>
-                </li>
-              </ul>
-            </div>
+        <section className="cta-band">
+          <div className="wrap cta-band-inner">
+            <h2>¿Listo para escalar con anuncios?</h2>
+            <p>
+              Contame cómo está tu pauta hoy y te digo con sinceridad si hay
+              cupo y si tiene sentido trabajar juntos.
+            </p>
+            <a
+              className="btn btn-primary"
+              href={WHATSAPP_HREF}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Reservar mi cupo por WhatsApp
+            </a>
           </div>
         </section>
       </main>

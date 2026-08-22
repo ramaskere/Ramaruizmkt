@@ -847,6 +847,66 @@ a {
   max-width: 42rem;
 }
 
+.video-card {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-frame {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  background: linear-gradient(
+    160deg,
+    rgba(10, 132, 255, 0.18),
+    rgba(255, 255, 255, 0.02)
+  );
+  border-bottom: 1px solid var(--card-line);
+}
+
+.video-frame-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--muted);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.play-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--card-line);
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  font-size: 1.1rem;
+}
+
+.video-caption {
+  padding: 1.1rem 1.25rem 1.3rem;
+}
+
+.video-caption h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
+}
+
+.video-caption p {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .offer-bullets {
   list-style: none;
   display: grid;

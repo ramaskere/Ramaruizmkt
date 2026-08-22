@@ -177,20 +177,17 @@ export default function CreacionDeContenido() {
               Algunos ejemplos de piezas que edité — cortes, ritmo,
               subtítulos y formato listo para publicar.
             </p>
-            {/*
-              TODO: reemplazar estos 4 placeholders por los videos/clips
-              editados reales (embeds o thumbnails con link). Mandarlos y
-              se actualiza esta sección.
-            */}
             <Carousel>
               <li className="card video-card result-card result-card--compact reveal">
                 <div className="video-frame">
-                  <div className="video-frame-placeholder">
-                    <span className="play-icon" aria-hidden="true">
-                      ▶
-                    </span>
-                    <span>Video de ejemplo próximamente</span>
-                  </div>
+                  <video
+                    className="video-el"
+                    src="/contenido/ejemplo-1.mp4"
+                    poster="/contenido/ejemplo-1.jpg"
+                    controls
+                    playsInline
+                    preload="none"
+                  />
                 </div>
                 <div className="video-caption">
                   <h4>Ejemplo 1</h4>
@@ -199,12 +196,14 @@ export default function CreacionDeContenido() {
               </li>
               <li className="card video-card result-card result-card--compact reveal">
                 <div className="video-frame">
-                  <div className="video-frame-placeholder">
-                    <span className="play-icon" aria-hidden="true">
-                      ▶
-                    </span>
-                    <span>Video de ejemplo próximamente</span>
-                  </div>
+                  <video
+                    className="video-el"
+                    src="/contenido/ejemplo-2.mp4"
+                    poster="/contenido/ejemplo-2.jpg"
+                    controls
+                    playsInline
+                    preload="none"
+                  />
                 </div>
                 <div className="video-caption">
                   <h4>Ejemplo 2</h4>
@@ -213,12 +212,14 @@ export default function CreacionDeContenido() {
               </li>
               <li className="card video-card result-card result-card--compact reveal">
                 <div className="video-frame">
-                  <div className="video-frame-placeholder">
-                    <span className="play-icon" aria-hidden="true">
-                      ▶
-                    </span>
-                    <span>Video de ejemplo próximamente</span>
-                  </div>
+                  <video
+                    className="video-el"
+                    src="/contenido/ejemplo-3.mp4"
+                    poster="/contenido/ejemplo-3.jpg"
+                    controls
+                    playsInline
+                    preload="none"
+                  />
                 </div>
                 <div className="video-caption">
                   <h4>Ejemplo 3</h4>
@@ -227,12 +228,14 @@ export default function CreacionDeContenido() {
               </li>
               <li className="card video-card result-card result-card--compact reveal">
                 <div className="video-frame">
-                  <div className="video-frame-placeholder">
-                    <span className="play-icon" aria-hidden="true">
-                      ▶
-                    </span>
-                    <span>Video de ejemplo próximamente</span>
-                  </div>
+                  <video
+                    className="video-el"
+                    src="/contenido/ejemplo-4.mp4"
+                    poster="/contenido/ejemplo-4.jpg"
+                    controls
+                    playsInline
+                    preload="none"
+                  />
                 </div>
                 <div className="video-caption">
                   <h4>Ejemplo 4</h4>

@@ -710,6 +710,25 @@ a {
   flex-direction: column;
 }
 
+.plan-card .plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+}
+
+.plan-card .plan-price span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .plan-tagline {
   color: var(--muted);
   font-size: 0.9rem;

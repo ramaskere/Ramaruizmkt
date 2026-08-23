@@ -251,19 +251,23 @@ export default function CreacionDeContenido() {
             <p className="section-label">Planes</p>
             <h2>3 formas de delegarlo.</h2>
             <p className="section-lead">
-              Elegís el volumen y las plataformas. El precio se ajusta
-              según eso — lo charlamos por WhatsApp, sin sorpresas.
+              Elegís el volumen y las plataformas. El precio de cada plan
+              todavía lo estamos terminando de definir — lo charlamos por
+              WhatsApp, sin sorpresas.
             </p>
             <ul className="card-grid stagger">
               <li className="card plan-card reveal" data-n="01">
                 <span className="card-tag">Plan 1</span>
                 <h3>Plan Básico</h3>
+                <p className="plan-price">
+                  Próximamente <span>Precio a definir</span>
+                </p>
                 <p className="plan-tagline">
                   Para mantener el ritmo sin pensar en nada.
                 </p>
                 <ul className="offer-bullets plan-includes">
-                  <li>Investigación de temas del mes</li>
-                  <li>Pauta de grabación por video</li>
+                  <li>4 piezas por mes (1 por semana)</li>
+                  <li>Investigación + pauta por video</li>
                   <li>Edición completa (cortes, subtítulos, música)</li>
                   <li>Publicación en 1 plataforma</li>
                   <li>Calendario mensual</li>
@@ -282,12 +286,15 @@ export default function CreacionDeContenido() {
               <li className="card plan-card reveal" data-n="02">
                 <span className="card-tag">Plan 2</span>
                 <h3>Plan Medio</h3>
+                <p className="plan-price">
+                  Próximamente <span>Precio a definir</span>
+                </p>
                 <p className="plan-tagline">
                   Más volumen, más presencia, mismo trabajo de tu lado: cero.
                 </p>
                 <ul className="offer-bullets plan-includes">
+                  <li>8 piezas por mes (2 por semana)</li>
                   <li>Investigación + pauta por video</li>
-                  <li>Mayor volumen de piezas por mes</li>
                   <li>Edición completa, formato por plataforma</li>
                   <li>Publicación en 2 plataformas</li>
                   <li>Calendario + reporte mensual</li>
@@ -309,12 +316,15 @@ export default function CreacionDeContenido() {
               >
                 <span className="card-tag">Plan 3 · Ultra Picante</span>
                 <h3>Plan Ultra Picante</h3>
+                <p className="plan-price">
+                  Próximamente <span>Precio a definir</span>
+                </p>
                 <p className="plan-tagline">
                   Para no tener que pensar en contenido nunca más.
                 </p>
                 <ul className="offer-bullets plan-includes">
+                  <li>12 piezas por mes (3 por semana)</li>
                   <li>Investigación semanal, no mensual</li>
-                  <li>Máximo volumen de piezas por mes</li>
                   <li>Edición más elaborada (B-roll, efectos, ritmo)</li>
                   <li>Publicación en Reels, TikTok y Shorts</li>
                   <li>Calendario + reporte + llamada mensual de estrategia</li>

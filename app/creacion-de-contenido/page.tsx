@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
 import Reveal from "../reveal";
 import Carousel from "../carousel";
-import { whatsappLink } from "../lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "Ramaruizmkt — Creación de contenido en video, todo incluido",
   description:
-    "Investigo, escribo el guion, armo el calendario, edito y publico. Vos solo grabás. Planes Básico, Medio y Ultra Picante.",
+    "Investigo, escribo el guion, armo el calendario, edito y publico. Vos solo grabás.",
 };
 
-const WHATSAPP_HREF = whatsappLink(
+const WHATSAPP_NUMBER_CONTENIDO = "5492645406690";
+
+function whatsappLinkContenido(message: string) {
+  return `https://wa.me/${WHATSAPP_NUMBER_CONTENIDO}?text=${encodeURIComponent(
+    message
+  )}`;
+}
+
+const WHATSAPP_HREF = whatsappLinkContenido(
   "Hola! Vi tu página de creación de contenido y quiero saber más."
 );
 
@@ -25,7 +32,6 @@ export default function CreacionDeContenido() {
           <div className="nav-links">
             <a href="#proceso">Cómo funciona</a>
             <a href="#asi-edito">Así edito</a>
-            <a href="#planes">Planes</a>
             <a
               className="nav-cta"
               href={WHATSAPP_HREF}
@@ -56,7 +62,8 @@ export default function CreacionDeContenido() {
             <p className="eyebrow">Creación de contenido · Servicio integral</p>
             <h1>
               <strong>Vos grabás.</strong>
-              <span>Yo investigo, escribo,</span>
+              <strong>Yo hago todo lo demás.</strong>
+              <span>investigo, escribo,</span>
               <span>edito y publico</span>
               <strong>todo lo demás.</strong>
             </h1>
@@ -242,167 +249,55 @@ export default function CreacionDeContenido() {
                   <p>Antes y después de una nota cruda</p>
                 </div>
               </li>
+              <li className="card video-card result-card result-card--compact reveal">
+                <div className="video-frame">
+                  <video
+                    className="video-el"
+                    src="/contenido/ejemplo-5.mp4"
+                    poster="/contenido/ejemplo-5.jpg"
+                    controls
+                    playsInline
+                    preload="none"
+                  />
+                </div>
+                <div className="video-caption">
+                  <h4>Ejemplo 5</h4>
+                  <p>CryptoManji — corte + ritmo</p>
+                </div>
+              </li>
+              <li className="card video-card result-card result-card--compact reveal">
+                <div className="video-frame">
+                  <video
+                    className="video-el video-el--letterbox"
+                    src="/contenido/ejemplo-6.mp4"
+                    poster="/contenido/ejemplo-6.jpg"
+                    controls
+                    playsInline
+                    preload="none"
+                  />
+                </div>
+                <div className="video-caption">
+                  <h4>Ejemplo 6</h4>
+                  <p>Edición para formato horizontal</p>
+                </div>
+              </li>
+              <li className="card video-card result-card result-card--compact reveal">
+                <div className="video-frame">
+                  <video
+                    className="video-el video-el--letterbox"
+                    src="/contenido/ejemplo-7.mp4"
+                    poster="/contenido/ejemplo-7.jpg"
+                    controls
+                    playsInline
+                    preload="none"
+                  />
+                </div>
+                <div className="video-caption">
+                  <h4>Ejemplo 7</h4>
+                  <p>Edición para formato horizontal</p>
+                </div>
+              </li>
             </Carousel>
-          </div>
-        </section>
-
-        <section className="section" id="planes">
-          <div className="wrap">
-            <p className="section-label">Planes</p>
-            <h2>3 formas de delegarlo.</h2>
-            <p className="section-lead">
-              Elegís el volumen y las plataformas. El precio de cada plan
-              todavía lo estamos terminando de definir — lo charlamos por
-              WhatsApp, sin sorpresas.
-            </p>
-            <ul className="card-grid stagger">
-              <li className="card plan-card reveal" data-n="01">
-                <span className="card-tag">Plan 1</span>
-                <h3>Plan Básico</h3>
-                <p className="plan-price">
-                  Próximamente <span>Precio a definir</span>
-                </p>
-                <p className="plan-tagline">
-                  Para mantener el ritmo sin pensar en nada.
-                </p>
-                <ul className="offer-bullets plan-includes">
-                  <li>4 piezas por mes (1 por semana)</li>
-                  <li>Investigación + pauta por video</li>
-                  <li>Edición completa (cortes, subtítulos, música)</li>
-                  <li>Publicación en 1 plataforma</li>
-                  <li>Calendario mensual</li>
-                </ul>
-                <a
-                  className="btn btn-ghost plan-cta"
-                  href={whatsappLink(
-                    "Hola! Vi tu página y quiero saber más sobre el Plan Básico de contenido."
-                  )}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Consultar precio →
-                </a>
-              </li>
-              <li className="card plan-card reveal" data-n="02">
-                <span className="card-tag">Plan 2</span>
-                <h3>Plan Medio</h3>
-                <p className="plan-price">
-                  Próximamente <span>Precio a definir</span>
-                </p>
-                <p className="plan-tagline">
-                  Más volumen, más presencia, mismo trabajo de tu lado: cero.
-                </p>
-                <ul className="offer-bullets plan-includes">
-                  <li>8 piezas por mes (2 por semana)</li>
-                  <li>Investigación + pauta por video</li>
-                  <li>Edición completa, formato por plataforma</li>
-                  <li>Publicación en 2 plataformas</li>
-                  <li>Calendario + reporte mensual</li>
-                </ul>
-                <a
-                  className="btn btn-ghost plan-cta"
-                  href={whatsappLink(
-                    "Hola! Vi tu página y quiero saber más sobre el Plan Medio de contenido."
-                  )}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Consultar precio →
-                </a>
-              </li>
-              <li
-                className="card plan-card plan-card--highlight reveal"
-                data-n="03"
-              >
-                <span className="card-tag">Plan 3 · Ultra Picante</span>
-                <h3>Plan Ultra Picante</h3>
-                <p className="plan-price">
-                  Próximamente <span>Precio a definir</span>
-                </p>
-                <p className="plan-tagline">
-                  Para no tener que pensar en contenido nunca más.
-                </p>
-                <ul className="offer-bullets plan-includes">
-                  <li>12 piezas por mes (3 por semana)</li>
-                  <li>Investigación semanal, no mensual</li>
-                  <li>Edición más elaborada (B-roll, efectos, ritmo)</li>
-                  <li>Publicación en Reels, TikTok y Shorts</li>
-                  <li>Calendario + reporte + llamada mensual de estrategia</li>
-                </ul>
-                <a
-                  className="btn btn-primary plan-cta"
-                  href={whatsappLink(
-                    "Hola! Vi tu página y quiero saber más sobre el Plan Ultra Picante de contenido."
-                  )}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Reservar mi cupo →
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="section contact" id="sobre-mi">
-          <div className="wrap">
-            <p className="section-label">Sobre mí</p>
-            <h2>Arranqué editando video. Nunca dejé de hacerlo.</h2>
-            <div className="bio-layout">
-              <div className="reveal">
-                <p className="bio-text">
-                  Antes de meterme en pauta publicitaria, edité video para
-                  otros — ahí aprendí a cortar, a pensar el ritmo de una
-                  pieza y a armar algo que a alguien le den ganas de ver
-                  hasta el final.
-                </p>
-                <p className="bio-text">
-                  Hoy gestiono cuentas grandes de infoproductores de
-                  Argentina y Latam, pero seguí con las manos en la edición
-                  — investigar temas, escribir la pauta y armar sistemas de
-                  contenido es lo que más disfruto de todo esto.
-                </p>
-                <div className="bio-signature-row">
-                  <div className="bio-avatar">
-                    <span className="avatar-initials">RR</span>
-                  </div>
-                  <p className="bio-signature">
-                    Rama Ruiz — creación y edición de contenido.
-                  </p>
-                </div>
-                <div className="contact-actions">
-                  <a
-                    className="btn btn-primary"
-                    href={WHATSAPP_HREF}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Hablar por WhatsApp
-                  </a>
-                </div>
-              </div>
-
-              <ul className="timeline stagger">
-                <li className="timeline-item reveal">
-                  <span className="timeline-dot" aria-hidden="true" />
-                  <h4>Editor de video</h4>
-                  <p>Así arranqué, editando piezas para otros.</p>
-                </li>
-                <li className="timeline-item reveal">
-                  <span className="timeline-dot" aria-hidden="true" />
-                  <h4>Media buyer</h4>
-                  <p>Terminé gestionando pauta de cuentas grandes.</p>
-                </li>
-                <li className="timeline-item reveal">
-                  <span className="timeline-dot" aria-hidden="true" />
-                  <h4>Contenido, de punta a punta</h4>
-                  <p>
-                    Hoy sumo investigación, guion, edición y publicación en
-                    un solo servicio.
-                  </p>
-                </li>
-              </ul>
-            </div>
           </div>
         </section>
 

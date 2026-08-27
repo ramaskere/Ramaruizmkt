@@ -919,6 +919,10 @@ a {
   background: #000;
 }
 
+.video-el--letterbox {
+  object-fit: contain;
+}
+
 .video-caption {
   padding: 1.1rem 1.25rem 1.3rem;
 }

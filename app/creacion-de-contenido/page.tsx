@@ -64,8 +64,7 @@ export default function CreacionDeContenido() {
               <strong>Vos grabás.</strong>
               <strong>Yo hago todo lo demás.</strong>
               <span>investigo, escribo,</span>
-              <span>edito y publico</span>
-              <strong>todo lo demás.</strong>
+              <span>edito y publico.</span>
             </h1>
             <div className="hero-cta">
               <a
@@ -189,8 +188,8 @@ export default function CreacionDeContenido() {
                 <div className="video-frame">
                   <video
                     className="video-el"
-                    src="/contenido/ejemplo-1.mp4"
-                    poster="/contenido/ejemplo-1.jpg"
+                    src="/contenido/ejemplo-5.mp4"
+                    poster="/contenido/ejemplo-5.jpg"
                     controls
                     playsInline
                     preload="none"
@@ -198,23 +197,7 @@ export default function CreacionDeContenido() {
                 </div>
                 <div className="video-caption">
                   <h4>Ejemplo 1</h4>
-                  <p>Corte + subtítulos + formato vertical</p>
-                </div>
-              </li>
-              <li className="card video-card result-card result-card--compact reveal">
-                <div className="video-frame">
-                  <video
-                    className="video-el"
-                    src="/contenido/ejemplo-2.mp4"
-                    poster="/contenido/ejemplo-2.jpg"
-                    controls
-                    playsInline
-                    preload="none"
-                  />
-                </div>
-                <div className="video-caption">
-                  <h4>Ejemplo 2</h4>
-                  <p>Ritmo de edición + música</p>
+                  <p>CryptoManji — corte + ritmo</p>
                 </div>
               </li>
               <li className="card video-card result-card result-card--compact reveal">
@@ -229,7 +212,7 @@ export default function CreacionDeContenido() {
                   />
                 </div>
                 <div className="video-caption">
-                  <h4>Ejemplo 3</h4>
+                  <h4>Ejemplo 2</h4>
                   <p>Hook + estructura de guion</p>
                 </div>
               </li>
@@ -245,24 +228,8 @@ export default function CreacionDeContenido() {
                   />
                 </div>
                 <div className="video-caption">
-                  <h4>Ejemplo 4</h4>
+                  <h4>Ejemplo 3</h4>
                   <p>Antes y después de una nota cruda</p>
-                </div>
-              </li>
-              <li className="card video-card result-card result-card--compact reveal">
-                <div className="video-frame">
-                  <video
-                    className="video-el"
-                    src="/contenido/ejemplo-5.mp4"
-                    poster="/contenido/ejemplo-5.jpg"
-                    controls
-                    playsInline
-                    preload="none"
-                  />
-                </div>
-                <div className="video-caption">
-                  <h4>Ejemplo 5</h4>
-                  <p>CryptoManji — corte + ritmo</p>
                 </div>
               </li>
               <li className="card video-card result-card result-card--compact reveal">
@@ -277,8 +244,8 @@ export default function CreacionDeContenido() {
                   />
                 </div>
                 <div className="video-caption">
-                  <h4>Ejemplo 6</h4>
-                  <p>Edición para formato horizontal</p>
+                  <h4>Ejemplo 4</h4>
+                  <p>Casa — detalle pileta</p>
                 </div>
               </li>
               <li className="card video-card result-card result-card--compact reveal">
@@ -293,8 +260,40 @@ export default function CreacionDeContenido() {
                   />
                 </div>
                 <div className="video-caption">
+                  <h4>Ejemplo 5</h4>
+                  <p>Casa — toma aérea</p>
+                </div>
+              </li>
+              <li className="card video-card result-card result-card--compact reveal">
+                <div className="video-frame">
+                  <video
+                    className="video-el"
+                    src="/contenido/ejemplo-1.mp4"
+                    poster="/contenido/ejemplo-1.jpg"
+                    controls
+                    playsInline
+                    preload="none"
+                  />
+                </div>
+                <div className="video-caption">
+                  <h4>Ejemplo 6</h4>
+                  <p>Corte + subtítulos + formato vertical</p>
+                </div>
+              </li>
+              <li className="card video-card result-card result-card--compact reveal">
+                <div className="video-frame">
+                  <video
+                    className="video-el"
+                    src="/contenido/ejemplo-2.mp4"
+                    poster="/contenido/ejemplo-2.jpg"
+                    controls
+                    playsInline
+                    preload="none"
+                  />
+                </div>
+                <div className="video-caption">
                   <h4>Ejemplo 7</h4>
-                  <p>Edición para formato horizontal</p>
+                  <p>Ritmo de edición + música</p>
                 </div>
               </li>
             </Carousel>

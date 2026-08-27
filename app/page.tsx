@@ -283,10 +283,11 @@ export default function Home() {
         <section className="section" id="planes">
           <div className="wrap">
             <p className="section-label">Planes</p>
-            <h2>3 formas de contratarme.</h2>
+            <h2>La estrategia primero. Las campañas, después.</h2>
             <p className="section-lead">
-              Elegís cuánto querés delegar. Cada plan te dice exactamente qué
-              te llevás.
+              No arranco poniendo anuncios al aire. Primero armamos la
+              estrategia que hace que conviertan — recién ahí entran las
+              campañas.
             </p>
             <ul className="card-grid stagger">
               <li className="card plan-card reveal" data-n="01">
@@ -314,21 +315,20 @@ export default function Home() {
               </li>
               <li className="card plan-card reveal" data-n="02">
                 <span className="card-tag">Plan 2</span>
-                <h3>Plan Básico</h3>
+                <h3>Estrategia de Marketing</h3>
                 <p className="plan-tagline">
-                  Para arrancar con todo armado y listo.
+                  Para tener un plan de conversión claro y ejecutarlo vos.
                 </p>
                 <ul className="offer-bullets plan-includes">
-                  <li>Investigación de nicho y competencia</li>
-                  <li>Estrategia y estructura de campaña</li>
-                  <li>Armado de los anuncios</li>
-                  <li>Campañas configuradas y lanzadas</li>
-                  <li>Después, la gestión queda en tus manos</li>
+                  <li>Diagnóstico de tu negocio y tu nicho</li>
+                  <li>Estrategia de marketing y conversión a medida</li>
+                  <li>Plan de acción concreto, paso a paso</li>
+                  <li>Vos lo ejecutás</li>
                 </ul>
                 <a
                   className="btn btn-ghost plan-cta"
                   href={whatsappLink(
-                    "Hola! Vi tu página y quiero saber más sobre el Plan Básico."
+                    "Hola! Vi tu página y quiero saber más sobre la Estrategia de Marketing."
                   )}
                   target="_blank"
                   rel="noreferrer"
@@ -342,12 +342,12 @@ export default function Home() {
               >
                 <span className="card-tag">Plan 3 · El más completo</span>
                 <h3>Gestión de Tráfico</h3>
-                <p className="plan-tagline">Para no tener que tocar nada.</p>
+                <p className="plan-tagline">Para no tener que pensar ni tocar nada.</p>
                 <ul className="offer-bullets plan-includes">
-                  <li>Investigación y estrategia</li>
+                  <li>Estrategia de marketing y conversión</li>
                   <li>Creación y edición de los anuncios</li>
                   <li>Configuración y publicación</li>
-                  <li>Seguimiento y optimización</li>
+                  <li>Seguimiento y optimización constante</li>
                   <li>Reportes y métricas</li>
                   <li>Gestión de punta a punta, todo el mes</li>
                 </ul>

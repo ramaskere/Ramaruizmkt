@@ -53,10 +53,37 @@ export default function Reveal() {
       window.addEventListener("scroll", onScroll, { passive: true });
       window.addEventListener("resize", onScroll);
 
+      // Parallax sutil del hero al mover el puntero
+      const hero = document.querySelector<HTMLElement>(".hero");
+      const rings = document.querySelector<HTMLElement>(".hero-rings");
+      const stack = document.querySelector<HTMLElement>(".hero-stack");
+      let rafId = 0;
+      const onPointer = (e: PointerEvent) => {
+        if (!hero) return;
+        const r = hero.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        cancelAnimationFrame(rafId);
+        rafId = requestAnimationFrame(() => {
+          if (rings) rings.style.transform = `translate(${x * -16}px, ${y * -16}px)`;
+          if (stack) stack.style.transform = `translate(${x * 8}px, ${y * 6}px)`;
+        });
+      };
+      const resetPointer = () => {
+        cancelAnimationFrame(rafId);
+        if (rings) rings.style.transform = "";
+        if (stack) stack.style.transform = "";
+      };
+      hero?.addEventListener("pointermove", onPointer);
+      hero?.addEventListener("pointerleave", resetPointer);
+
       return () => {
         observer.disconnect();
         window.removeEventListener("scroll", onScroll);
         window.removeEventListener("resize", onScroll);
+        cancelAnimationFrame(rafId);
+        hero?.removeEventListener("pointermove", onPointer);
+        hero?.removeEventListener("pointerleave", resetPointer);
       };
     }
   }, []);

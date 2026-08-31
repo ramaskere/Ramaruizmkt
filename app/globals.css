@@ -1800,3 +1800,263 @@ a {
     font-size: 3.4rem;
   }
 }
+
+/* =========================================================
+   Motion + secciones nuevas (VS / flujo / historia Tino)
+   ========================================================= */
+
+/* Parallax del hero (lo mueve el JS con transform inline) */
+.hero-rings {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hero-stack {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Brillo que barre el botón primario */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 -60%;
+  width: 45%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: skewX(-18deg);
+  transition: left 0.55s ease;
+  pointer-events: none;
+}
+.btn-primary:hover::after {
+  left: 130%;
+}
+
+/* ---- VS: tres columnas ---- */
+.vs-title {
+  max-width: 22ch;
+}
+.vs-grid--trio {
+  margin-top: 2.75rem;
+}
+@media (min-width: 940px) {
+  .vs-grid--trio {
+    grid-template-columns: 1fr 1fr 1.18fr;
+    align-items: stretch;
+    gap: 1rem;
+  }
+}
+.vs-col {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease;
+}
+.vs-col--free,
+.vs-col--agency {
+  opacity: 0.9;
+}
+.vs-col--free .vs-list li::before,
+.vs-col--agency .vs-list li::before {
+  content: "\2715";
+  color: var(--muted);
+}
+.vs-col--me {
+  background: linear-gradient(
+      180deg,
+      rgba(10, 132, 255, 0.12),
+      rgba(255, 255, 255, 0.012)
+    ),
+    var(--card-bg);
+  border-color: rgba(10, 132, 255, 0.42);
+}
+.vs-col--me::before {
+  content: "Mejor opción";
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.32rem 0.7rem;
+  border-bottom-left-radius: 12px;
+}
+.vs-col--me .vs-col-title {
+  color: var(--accent);
+}
+@media (min-width: 940px) {
+  .vs-col--me {
+    margin-top: -12px;
+    margin-bottom: -12px;
+  }
+}
+.vs-col--me.is-visible {
+  animation: vs-pop 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+@keyframes vs-pop {
+  0% {
+    box-shadow: 0 0 0 0 rgba(10, 132, 255, 0);
+  }
+  45% {
+    box-shadow: 0 0 0 7px rgba(10, 132, 255, 0.2),
+      0 26px 60px rgba(0, 0, 0, 0.42);
+  }
+  100% {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      0 0 0 1px rgba(10, 132, 255, 0.16), 0 24px 55px rgba(0, 0, 0, 0.36);
+  }
+}
+.vs-col:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+@media (min-width: 940px) {
+  .vs-col--me:hover {
+    transform: translateY(-15px);
+  }
+}
+
+/* ---- Flujo (qué hago) ---- */
+.flow-headline {
+  max-width: 24ch;
+}
+.flow {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.75rem;
+}
+.flow > li {
+  flex: 1 1 200px;
+  position: relative;
+  padding: 1.5rem 1.4rem 1.6rem;
+  border: 1px solid var(--card-line);
+  border-radius: var(--radius-card);
+  background: var(--card-bg);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease, background 0.35s ease;
+}
+.flow > li:hover {
+  transform: translateY(-5px);
+  border-color: rgba(10, 132, 255, 0.35);
+  background: linear-gradient(
+      180deg,
+      rgba(10, 132, 255, 0.08),
+      transparent
+    ),
+    var(--card-bg);
+}
+.flow > li:not(:last-child)::after {
+  content: "\2192";
+  position: absolute;
+  right: -0.68rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.95rem;
+  z-index: 2;
+}
+@media (max-width: 780px) {
+  .flow > li:not(:last-child)::after {
+    content: "\2193";
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: -0.95rem;
+    transform: translateX(-50%);
+  }
+}
+.flow-k {
+  display: block;
+  font-weight: 700;
+  font-size: 1.08rem;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+.flow-k::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 0.55rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.18);
+  vertical-align: middle;
+}
+.flow-d {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ---- Historia (Tino) ---- */
+.story-section {
+  overflow: hidden;
+}
+.story {
+  max-width: 40rem;
+  margin-inline: auto;
+}
+.story > p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.72;
+  margin-bottom: 1.55rem;
+}
+.story > p:last-child {
+  margin-bottom: 0;
+}
+.story > p.story-lead {
+  color: var(--ink);
+  font-size: 1.22rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+.story strong {
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.story > p.story-kicker {
+  color: var(--ink);
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding-left: 1.15rem;
+  border-left: 2px solid var(--accent);
+  margin-top: 2.25rem;
+}
+.story-photo {
+  margin: 2.5rem 0;
+}
+.story-photo img {
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center 30%;
+}
+@media (min-width: 1000px) {
+  .story-photo {
+    width: calc(100% + 120px);
+  }
+  .story-photo--left {
+    margin-left: -120px;
+  }
+  .story-photo--right {
+    margin-right: -120px;
+  }
+}

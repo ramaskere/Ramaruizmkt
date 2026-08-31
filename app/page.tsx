@@ -128,154 +128,149 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section" id="problema">
+        <section className="section vs-section" id="opciones">
           <div className="wrap">
-            <p className="section-label">El problema</p>
-            <h2>
-              Escalar no falla en el botón de &ldquo;subir presupuesto&rdquo;.
-              Falla antes.
+            <p className="section-label">Tus opciones</p>
+            <h2 className="vs-title">
+              Para llevar tu pauta tenés tres caminos. Uno solo te baja el
+              costo por venta.
             </h2>
-            <p className="section-lead">
-              Cuando tu research, tus creativos y tu pauta los maneja gente
-              distinta, pasa esto:
-            </p>
-            <ul className="offer-bullets reveal">
-              <li>
-                El creativo se hace sin saber qué objeción tiene que romper.
+            <ul className="vs-grid vs-grid--trio stagger">
+              <li className="vs-col vs-col--free reveal">
+                <p className="vs-col-title">Vos + 3 freelancers</p>
+                <ul className="vs-list">
+                  <li>Hablás con tres personas para sacar un anuncio nuevo.</li>
+                  <li>
+                    El que edita no sabe de ventas; el que sabe de ventas no
+                    edita.
+                  </li>
+                  <li>Cada uno entrega su parte y nadie se hace cargo del número.</li>
+                  <li>El project manager terminás siendo vos.</li>
+                </ul>
               </li>
-              <li>
-                El media buyer optimiza a ciegas: ve el número, pero no puede
-                cambiar el anuncio que no funciona.
+              <li className="vs-col vs-col--agency reveal">
+                <p className="vs-col-title">Una agencia</p>
+                <ul className="vs-list">
+                  <li>Te asignan una cuenta junior que aprende con tu presupuesto.</li>
+                  <li>Cada cambio pasa por aprobaciones y tarda semanas.</li>
+                  <li>Sos un cliente más en una lista larga.</li>
+                  <li>Pagás la estructura, no el resultado.</li>
+                </ul>
               </li>
-              <li>
-                Nadie mira la cuenta hasta fin de mes, cuando ya se fueron tres
-                semanas de gasto.
+              <li className="vs-col vs-col--me reveal">
+                <p className="vs-col-title">Conmigo</p>
+                <ul className="vs-list">
+                  <li>Research, creativos y pauta salen de la misma cabeza.</li>
+                  <li>El anuncio que no funciona lo cambio yo, el mismo día.</li>
+                  <li>Reporte diario, semanal y mensual. No te enterás a fin de mes.</li>
+                  <li>Me meto en tu cuenta como si fuera mía.</li>
+                </ul>
               </li>
             </ul>
-            <p className="section-lead" style={{ marginBottom: 0 }}>
-              Subís el presupuesto y el costo por venta sube con él.
-            </p>
           </div>
         </section>
 
-        <section className="section" id="solucion">
+        <section className="section flow-section" id="solucion">
           <div className="wrap">
-            <p className="section-label">La solución</p>
-            <h2>Un solo sistema que se encarga de todo lo que mueve tu costo por venta.</h2>
-            <p className="section-lead">
-              Cuatro piezas, un mismo responsable, y en este orden. La estrategia
-              primero, las campañas después.
-            </p>
-            <ol className="steps stagger">
-              <li className="step reveal">
-                <span className="step-n">01</span>
-                <div className="step-body">
-                  <h3>Research de ángulos y competencia</h3>
-                  <p>
-                    Primero, qué decir. Cada mes reviso qué corre tu
-                    competencia y qué ángulos nuevos vale la pena probar. De acá
-                    sale todo lo demás.
-                  </p>
-                </div>
+            <p className="section-label">Qué hago</p>
+            <h2 className="flow-headline">
+              Me encargo de todo lo que mueve tu costo por venta. Y en este
+              orden.
+            </h2>
+            <ol className="flow stagger">
+              <li className="reveal">
+                <span className="flow-k">Research</span>
+                <span className="flow-d">
+                  Qué ángulos están funcionando en tu nicho este mes. De acá
+                  sale todo lo demás.
+                </span>
               </li>
-              <li className="step reveal">
-                <span className="step-n">02</span>
-                <div className="step-body">
-                  <h3>Creativos que convierten</h3>
-                  <p>
-                    Producción de los anuncios en video que tu cuenta necesite,
-                    apoyada en IA para probar más ángulos en menos tiempo. Los
-                    hooks salen de tu oferta y de las objeciones reales de tus
-                    compradores, no de una plantilla.
-                  </p>
-                </div>
+              <li className="reveal">
+                <span className="flow-k">Creativos</span>
+                <span className="flow-d">
+                  Los videos que hagan falta, con hooks sacados de las
+                  objeciones reales de tus compradores. Apoyado en IA para
+                  probar más en menos tiempo.
+                </span>
               </li>
-              <li className="step reveal">
-                <span className="step-n">03</span>
-                <div className="step-body">
-                  <h3>Gestión de campañas Meta</h3>
-                  <p>
-                    Estructura, segmentación, escalado y optimización diaria.
-                    Nada de &ldquo;esperar a ver qué pasa&rdquo;.
-                  </p>
-                </div>
+              <li className="reveal">
+                <span className="flow-k">Campañas</span>
+                <span className="flow-d">
+                  Estructura, segmentación, escalado y optimización. Todos los
+                  días, no cuando me acuerdo.
+                </span>
               </li>
-              <li className="step reveal">
-                <span className="step-n">04</span>
-                <div className="step-body">
-                  <h3>Reporte diario, semanal y mensual</h3>
-                  <p>
-                    Diario: los números clave de tus campañas. Semanal: qué se
-                    probó y qué funcionó. Mensual: análisis con lectura
-                    estratégica y plan del mes siguiente. Vas a saber cómo van
-                    tus anuncios todos los días, no una vez al mes.
-                  </p>
-                </div>
+              <li className="reveal">
+                <span className="flow-k">Reporte</span>
+                <span className="flow-d">
+                  Diario, semanal y mensual, con lectura estratégica y el plan
+                  del mes que viene.
+                </span>
               </li>
             </ol>
           </div>
         </section>
 
-        <section className="section caso" id="caso">
+        <section className="section story-section" id="caso">
           <div className="wrap">
             <p className="section-label">Un cliente</p>
-            <h2>Tino Mossu.</h2>
-            <p className="section-lead">
-              Tino es CEO de Factor Studios y fundador de la U del Closer, una
-              de las escuelas de ventas y closing más grandes de Latam, con un
-              equipo de más de 40 personas. Trabajé 18 meses con él llevando
-              toda su pauta de Meta.
-            </p>
+            <div className="story">
+              <p className="story-lead reveal">
+                A Tino Mossu lo conocí en un evento. Ya era CEO de Factor
+                Studios y estaba armando la U del Closer, hoy una de las
+                escuelas de ventas y closing más grandes de Latam, con un
+                equipo de más de 40 personas.
+              </p>
 
-            <div className="caso-layout">
               <Figure
                 src="/sobre-mi/rama-tino.jpg"
                 alt="Rama Ruiz junto a Tino Mossu"
-                caption="Con Tino Mossu (camisa blanca). Nos conocimos en persona, no fue trabajar por mail y mandar un reporte."
-                className="caso-photo"
+                caption="Con Tino (camisa blanca). Nos conocimos en persona, no fue trabajar por mail y mandar un reporte."
+                className="story-photo story-photo--right"
               />
 
-              <div className="caso-story reveal">
-                <p>
-                  A Tino lo conocí en un evento. Antes de tocar un solo anuncio
-                  me senté con él y con su equipo a entender cómo piensan la
-                  oferta, a quién quieren adentro y a quién no.
-                </p>
-                <p>
-                  Durante 18 meses llevé su cuenta como un solo sistema:
-                  research, creativos en video y campañas, todo desde el mismo
-                  lugar. El evergreen nunca se apagó y encima montamos los
-                  lanzamientos arriba.
-                </p>
-                <p className="caso-kicker">
-                  En ese tiempo llevé su cuenta a meses de más de US$400.000
-                  facturados con ads, tocando los US$500.000 varios meses
-                  seguidos.
-                </p>
-              </div>
-            </div>
+              <p className="reveal">
+                Me senté con él y con su equipo antes de tocar un solo anuncio.
+                Quería entender cómo pensaban la oferta, a quién querían adentro
+                y a quién no. De esa charla salió la primera estructura de
+                campañas.
+              </p>
+              <p className="reveal">
+                Los siguientes{" "}
+                <strong>
+                  <CountUp value={18} suffix=" meses" />
+                </strong>{" "}
+                llevé su cuenta entera: el research de ángulos, los creativos en
+                video y la pauta, todo desde el mismo lugar. Cuando un anuncio
+                dejaba de rendir no esperaba a nadie, lo cambiaba yo el mismo
+                día con un ángulo nuevo.
+              </p>
 
-            <div className="caso-stats stagger">
-              <div className="client-stat reveal">
-                <span className="client-stat-value">18 meses</span>
-                <span className="client-stat-label">Llevando su pauta</span>
-              </div>
-              <div className="client-stat reveal">
-                <span className="client-stat-value">+US$400K</span>
-                <span className="client-stat-label">Facturados con ads por mes</span>
-              </div>
-              <div className="client-stat reveal">
-                <span className="client-stat-value">US$500K</span>
-                <span className="client-stat-label">En los meses pico</span>
-              </div>
-            </div>
+              <Figure
+                src="/sobre-mi/rama-tino-call.jpg"
+                alt="Rama Ruiz en una videollamada de trabajo con el equipo de Tino Mossu"
+                caption="En una call con el equipo. Todo se trabajaba con ellos adentro, no mandando un reporte a fin de mes."
+                className="story-photo story-photo--left"
+              />
 
-            <Figure
-              src="/sobre-mi/rama-tino-call.jpg"
-              alt="Rama Ruiz en una videollamada de trabajo con el equipo de Tino Mossu"
-              caption="En una call con el equipo. El trabajo se hacía con ellos adentro, no mandando un reporte a fin de mes."
-              className="photo-figure--wide caso-call"
-            />
+              <p className="reveal">
+                El evergreen no se apagó nunca, y encima montamos los
+                lanzamientos arriba sin que una cosa le comiera el presupuesto a
+                la otra. En los meses buenos la cuenta facturó más de{" "}
+                <strong>
+                  <CountUp value={400000} prefix="US$" />
+                </strong>{" "}
+                con ads, y varios meses seguidos tocamos los{" "}
+                <strong>
+                  <CountUp value={500000} prefix="US$" />
+                </strong>
+                .
+              </p>
+              <p className="story-kicker reveal">
+                Eso es lo que hago: me meto en una cuenta, me quedo, y la
+                empujo mes a mes.
+              </p>
+            </div>
           </div>
         </section>
 

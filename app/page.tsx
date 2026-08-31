@@ -216,59 +216,60 @@ export default function Home() {
             <p className="section-label">Un cliente</p>
             <div className="story">
               <p className="story-lead reveal">
-                A Tino Mossu lo conocí en un evento. Ya era CEO de Factor
-                Studios y estaba armando la U del Closer, hoy una de las
-                escuelas de ventas y closing más grandes de Latam, con un
-                equipo de más de 40 personas.
-              </p>
-
-              <Figure
-                src="/sobre-mi/rama-tino.jpg"
-                alt="Rama Ruiz junto a Tino Mossu"
-                caption="Con Tino (camisa blanca). Nos conocimos en persona, no fue trabajar por mail y mandar un reporte."
-                className="story-photo story-photo--right"
-              />
-
-              <p className="reveal">
-                Me senté con él y con su equipo antes de tocar un solo anuncio.
-                Quería entender cómo pensaban la oferta, a quién querían adentro
-                y a quién no. De esa charla salió la primera estructura de
-                campañas.
-              </p>
-              <p className="reveal">
-                Los siguientes{" "}
+                Con Tino Mossu llevé la cuenta de Meta{" "}
                 <strong>
                   <CountUp value={18} suffix=" meses" />
-                </strong>{" "}
-                llevé su cuenta entera: el research de ángulos, los creativos en
-                video y la pauta, todo desde el mismo lugar. Cuando un anuncio
-                dejaba de rendir no esperaba a nadie, lo cambiaba yo el mismo
-                día con un ángulo nuevo.
-              </p>
-
-              <Figure
-                src="/sobre-mi/rama-tino-call.jpg"
-                alt="Rama Ruiz en una videollamada de trabajo con el equipo de Tino Mossu"
-                caption="En una call con el equipo. Todo se trabajaba con ellos adentro, no mandando un reporte a fin de mes."
-                className="story-photo story-photo--left"
-              />
-
-              <p className="reveal">
-                El evergreen no se apagó nunca, y encima montamos los
-                lanzamientos arriba sin que una cosa le comiera el presupuesto a
-                la otra. En los meses buenos la cuenta facturó más de{" "}
+                </strong>
+                . Tuvimos meses de más de{" "}
                 <strong>
                   <CountUp value={400000} prefix="US$" />
                 </strong>{" "}
-                con ads, y varios meses seguidos tocamos los{" "}
+                facturados con ads, y una racha de varios meses seguidos en{" "}
                 <strong>
                   <CountUp value={500000} prefix="US$" />
                 </strong>
                 .
               </p>
+
+              <p className="reveal">
+                Tino es CEO de Factor Studios y fundador de la U del Closer, una
+                de las escuelas de ventas y closing más grandes de Latam, con
+                más de 40 personas en el equipo.
+              </p>
+
+              <Figure
+                src="/sobre-mi/rama-tino.jpg"
+                alt="Rama Ruiz junto a Tino Mossu"
+                caption="Con Tino (camisa blanca). Lo conocí en persona, no fue trabajar por mail y mandar un reporte."
+                className="story-photo story-photo--right"
+              />
+
+              <p className="reveal">
+                Antes de tocar un solo anuncio me senté con él y con su equipo a
+                entender cómo piensan la oferta y a quién quieren adentro. De ahí
+                salió la primera estructura de campañas.
+              </p>
+              <p className="reveal">
+                Los 18 meses llevé todo desde el mismo lugar: el research de
+                ángulos, los creativos en video y las campañas. Cuando un
+                anuncio dejaba de rendir lo cambiaba yo el mismo día, sin
+                esperar a nadie.
+              </p>
+
+              <Figure
+                src="/sobre-mi/rama-tino-call.jpg"
+                alt="Rama Ruiz en una videollamada de trabajo con el equipo de Tino Mossu"
+                caption="En una call con el equipo. Todo se trabajaba con ellos adentro."
+                className="story-photo story-photo--left"
+              />
+
+              <p className="reveal">
+                El evergreen no se apagó nunca y encima montamos los
+                lanzamientos arriba, sin frenar uno para hacer el otro.
+              </p>
               <p className="story-kicker reveal">
-                Eso es lo que hago: me meto en una cuenta, me quedo, y la
-                empujo mes a mes.
+                Así trabajo: me meto en la cuenta, me quedo, y la hago crecer
+                mes a mes.
               </p>
             </div>
           </div>

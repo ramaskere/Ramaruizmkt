@@ -344,6 +344,56 @@ a {
   }
 }
 
+/* Hero en una sola columna: headline, sub, video, CTA */
+.hero-stack {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.hero-stack .hero-lead {
+  margin-inline: auto;
+}
+
+.hero-stack .intro-video {
+  margin-top: 2.5rem;
+}
+
+.hero-stack .hero-cta {
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero-stack > * {
+  animation: fade-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-stack .eyebrow {
+  animation-delay: 0.04s;
+}
+
+.hero-stack h1 {
+  animation-delay: 0.1s;
+}
+
+.hero-stack .hero-lead {
+  animation-delay: 0.16s;
+}
+
+.hero-stack .intro-video {
+  animation-delay: 0.22s;
+}
+
+.hero-stack .hero-cta {
+  animation-delay: 0.3s;
+}
+
+.hero-stack .hero-stats {
+  animation-delay: 0.36s;
+}
+
 /* Marquee de clientes / especialidades */
 .marquee {
   position: relative;
@@ -478,6 +528,198 @@ a {
   font-size: 0.85rem;
   font-weight: 600;
   margin-top: 1.75rem;
+}
+
+.hero-lead {
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: 34rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .hero-lead {
+    margin-inline: 0;
+  }
+}
+
+/* Bloque de video de introducción (debajo del hero) */
+.intro-video-section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.intro-video {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.intro-video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--card-line);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: linear-gradient(
+    160deg,
+    rgba(10, 132, 255, 0.16),
+    rgba(255, 255, 255, 0.015)
+  );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 24px 60px rgba(0, 0, 0, 0.34);
+}
+
+.intro-video-frame video,
+.intro-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+}
+
+.intro-video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Caso Tino Mossu */
+.caso-layout {
+  display: grid;
+  gap: 2.25rem;
+  grid-template-columns: 1fr;
+  align-items: start;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 880px) {
+  .caso-layout {
+    grid-template-columns: 0.82fr 1.18fr;
+    gap: 3rem;
+  }
+}
+
+.caso-photo {
+  margin: 0;
+  align-self: start;
+}
+
+.caso-photo:only-child,
+.caso-story:only-child {
+  grid-column: 1 / -1;
+  max-width: 42rem;
+}
+
+.caso-photo img {
+  max-height: 540px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.caso-story > p {
+  color: var(--muted);
+  margin-bottom: 1.1rem;
+  max-width: 40rem;
+}
+
+.caso-story > p:last-child {
+  margin-bottom: 0;
+}
+
+.caso-kicker {
+  margin-top: 1.6rem;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--accent);
+  color: var(--ink) !important;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.caso-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.25rem;
+  margin-top: 2.75rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.caso-stats .client-stat-value {
+  font-size: 1.7rem;
+}
+
+.caso-call {
+  max-width: 620px;
+}
+
+.caso-call img {
+  max-height: 460px;
+  object-fit: cover;
+}
+
+/* Solución: pasos en orden jerárquico */
+.steps {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  max-width: 44rem;
+  counter-reset: step;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.6rem 1.6rem 1.7rem;
+  border: 1px solid var(--card-line);
+  border-radius: var(--radius-card);
+  background: var(--card-bg);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
+.step-n {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.1rem;
+}
+
+.step-body h3 {
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.step-body p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 700px) {
+  .step {
+    grid-template-columns: 3.5rem 1fr;
+    padding: 1.9rem 2rem;
+  }
+
+  .step-n {
+    font-size: 1.6rem;
+  }
 }
 
 .hero h1 {

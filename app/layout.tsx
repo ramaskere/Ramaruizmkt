@@ -9,9 +9,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ramaruizmkt — Meta Ads para coaches, negocios e infoproductores",
+  title:
+    "Ramaruizmkt · Pauta y creativos de Meta Ads para infoproductores de ventas",
   description:
-    "Gestión completa de Meta Ads con fee fijo mensual. Cupo limitado a 2-3 clientes. Yo me encargo de todo.",
+    "Tu research de ángulos, tus creativos y tu pauta en un solo sistema que se encarga de todo. Fee fijo mensual, empezamos por un diagnóstico de cuenta y embudo.",
 };
 
 export default function RootLayout({
